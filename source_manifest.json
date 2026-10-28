@@ -1,0 +1,1754 @@
+{
+  "manuscript_version": 49,
+  "build_source": "scripts/build_public_code_sources.py",
+  "python_modules": 21,
+  "r_scripts": 2,
+  "all_python_function_and_class_ast_preserved": true,
+  "import_contract": "Add the absolute analysis_sources directory to sys.path; import by original bare module name. Rebind captured path aliases in every imported module when choosing a runtime context.",
+  "default_roots": {
+    "data": "package_root/authorized_inputs",
+    "outputs": "package_root/runtime"
+  },
+  "source_files": [
+    {
+      "source": "scripts/run_2013_initial_microbiome_signal_probes.py",
+      "public": "analysis_sources/run_2013_initial_microbiome_signal_probes.py",
+      "source_sha256": "3218ee09fc2181443d73899c9e2d1c7f7706eabc2a06ecc664e0de14b17b6c63",
+      "public_sha256": "7536f8b7b10f19f496adb83f49416a2ef7877dd8e5a63a470b8f7ff131c897c4",
+      "local_imports": [],
+      "substitutions": [
+        {
+          "line": 28,
+          "reason": "portable module-level path default",
+          "original": "<private machine data-root assignment>",
+          "original_sha256": "f9a14cadd3450fd46dd40b98cac68fa2a7477783bb272036f6a6dce08d724925",
+          "replacement": "DEFAULT_DATA_ROOT = Path(__file__).resolve().parents[1] / 'authorized_inputs'"
+        },
+        {
+          "line": 31,
+          "reason": "portable module-level path default",
+          "original": "PROJECT_ROOT = Path(\"research_projects/dry_eye_gut_microbiome_scoping_2026\")",
+          "original_sha256": "fbbc72b062ff99029eb21eea647003c2d4ba179d736a6c58bb43ca1da76bdeb3",
+          "replacement": "PROJECT_ROOT = Path(__file__).resolve().parents[1]"
+        },
+        {
+          "line": 818,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "BranchSummary": {
+          "source_ast_sha256": "3a9dbad16635c21f4bd45d7e05b7019b987e4fbb7e4c5d9da868e395f9749ae1",
+          "public_ast_sha256": "3a9dbad16635c21f4bd45d7e05b7019b987e4fbb7e4c5d9da868e395f9749ae1",
+          "identical": true
+        },
+        "normalize_columns": {
+          "source_ast_sha256": "5af63253725d3f75a3f2499325d8fb482917497a42af84b77d82fba21a3eb898",
+          "public_ast_sha256": "5af63253725d3f75a3f2499325d8fb482917497a42af84b77d82fba21a3eb898",
+          "identical": true
+        },
+        "load_ded_2013": {
+          "source_ast_sha256": "435a3b40f77d3333dc8e0d5635708e1a7eb08cbd793cbd9dc8277047109e4966",
+          "public_ast_sha256": "435a3b40f77d3333dc8e0d5635708e1a7eb08cbd793cbd9dc8277047109e4966",
+          "identical": true
+        },
+        "derive_symptom_outcomes": {
+          "source_ast_sha256": "6c4f8b0cb8d9d0165939363ba50d967dd686aa34f784e7c187e37468bcd60d8e",
+          "public_ast_sha256": "6c4f8b0cb8d9d0165939363ba50d967dd686aa34f784e7c187e37468bcd60d8e",
+          "identical": true
+        },
+        "load_mapping": {
+          "source_ast_sha256": "c559465c70429848736f22561fd3f077a3f41ced041ef3156dbf703e9168815f",
+          "public_ast_sha256": "c559465c70429848736f22561fd3f077a3f41ced041ef3156dbf703e9168815f",
+          "identical": true
+        },
+        "load_family_ids": {
+          "source_ast_sha256": "2b7ddb1999d46004cb49650f97aefb0fa335697cd76ae0927943549de9f96209",
+          "public_ast_sha256": "2b7ddb1999d46004cb49650f97aefb0fa335697cd76ae0927943549de9f96209",
+          "identical": true
+        },
+        "load_asv_counts": {
+          "source_ast_sha256": "96e44fc695f53abfd41e84da9b3f9b7c9ec21161402702dce6f2de3fefd3420e",
+          "public_ast_sha256": "96e44fc695f53abfd41e84da9b3f9b7c9ec21161402702dce6f2de3fefd3420e",
+          "identical": true
+        },
+        "load_taxa": {
+          "source_ast_sha256": "9092fc2592bdf2214d5a33ef7fed43c0ba460b6828fefd2e24f4ec20ce6ca4ac",
+          "public_ast_sha256": "9092fc2592bdf2214d5a33ef7fed43c0ba460b6828fefd2e24f4ec20ce6ca4ac",
+          "identical": true
+        },
+        "sample_read_depths": {
+          "source_ast_sha256": "2c7350f3d31117298c94c3ef99b4d3405f8ed20ff419dd8beefc08328ad279d1",
+          "public_ast_sha256": "2c7350f3d31117298c94c3ef99b4d3405f8ed20ff419dd8beefc08328ad279d1",
+          "identical": true
+        },
+        "nearest_stool_pairs": {
+          "source_ast_sha256": "38c1c214cede7954dad568817181c94b659b78ab29660506bae9da1f25eab2f8",
+          "public_ast_sha256": "38c1c214cede7954dad568817181c94b659b78ab29660506bae9da1f25eab2f8",
+          "identical": true
+        },
+        "compute_alpha_and_genus": {
+          "source_ast_sha256": "e946b8d81053d3bfbdf76bd1426cb1b95261acb8f1fabaf8bb7790e730f883a6",
+          "public_ast_sha256": "e946b8d81053d3bfbdf76bd1426cb1b95261acb8f1fabaf8bb7790e730f883a6",
+          "identical": true
+        },
+        "clean_feature_name": {
+          "source_ast_sha256": "ef6e9e831f39681048696e38bb4d7c971d739514509db86eb8db18eb92d2834b",
+          "public_ast_sha256": "ef6e9e831f39681048696e38bb4d7c971d739514509db86eb8db18eb92d2834b",
+          "identical": true
+        },
+        "standardize": {
+          "source_ast_sha256": "ee03e77d4bf217ed26b170c233ccb32b9d623b5fd7daafd25ccb8155d7b0e843",
+          "public_ast_sha256": "ee03e77d4bf217ed26b170c233ccb32b9d623b5fd7daafd25ccb8155d7b0e843",
+          "identical": true
+        },
+        "association_screen": {
+          "source_ast_sha256": "bd162c6a3386cac8e07df264959861675e9c166f6df24644f3023095d0acf5ae",
+          "public_ast_sha256": "bd162c6a3386cac8e07df264959861675e9c166f6df24644f3023095d0acf5ae",
+          "identical": true
+        },
+        "continuous_association_screen": {
+          "source_ast_sha256": "76342de112e525df907ba906bf4eebc0bafaa8b7470af9029c839d180e0c4713",
+          "public_ast_sha256": "76342de112e525df907ba906bf4eebc0bafaa8b7470af9029c839d180e0c4713",
+          "identical": true
+        },
+        "predictive_check": {
+          "source_ast_sha256": "86f542f72d0cc291dea7adceefa3710cb65e057df3c7e13b0c99dd51ee861620",
+          "public_ast_sha256": "86f542f72d0cc291dea7adceefa3710cb65e057df3c7e13b0c99dd51ee861620",
+          "identical": true
+        },
+        "continuous_predictive_check": {
+          "source_ast_sha256": "263557725fba8cb0c6d46585a0a0b8f14756362210b9c70995254c00c6d92364",
+          "public_ast_sha256": "263557725fba8cb0c6d46585a0a0b8f14756362210b9c70995254c00c6d92364",
+          "identical": true
+        },
+        "select_prediction_features": {
+          "source_ast_sha256": "4eb4efbb1b717e52493d7e58d8758128bdfb6800c925d6aea785cddc21df15d4",
+          "public_ast_sha256": "4eb4efbb1b717e52493d7e58d8758128bdfb6800c925d6aea785cddc21df15d4",
+          "identical": true
+        },
+        "run_branch": {
+          "source_ast_sha256": "02cc9c39ed1c0252778dc12d97c0f99b1559cc281b867804b711d2977c6752df",
+          "public_ast_sha256": "02cc9c39ed1c0252778dc12d97c0f99b1559cc281b867804b711d2977c6752df",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "662697f746eec4a7a66b4fce0f7d86854ba75241adfd70ccd3de3bb120473d32",
+          "public_ast_sha256": "662697f746eec4a7a66b4fce0f7d86854ba75241adfd70ccd3de3bb120473d32",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/run_2013_locked_primary_16s_analysis.py",
+      "public": "analysis_sources/run_2013_locked_primary_16s_analysis.py",
+      "source_sha256": "803288bd4469773d64216e5d95f2211831ea5b8f72aeb31077042e91bada217a",
+      "public_sha256": "3e02e8a25c28a6ce76dd39793318af6de8771357b596f7415f3e50917a570e15",
+      "local_imports": [
+        "run_2013_initial_microbiome_signal_probes"
+      ],
+      "substitutions": [
+        {
+          "line": 441,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "sex_is_estimable": {
+          "source_ast_sha256": "6c7d44a2a26bde83159db83da455fee1e805e32e2aabee67a6c1ffac712679d4",
+          "public_ast_sha256": "6c7d44a2a26bde83159db83da455fee1e805e32e2aabee67a6c1ffac712679d4",
+          "identical": true
+        },
+        "build_x": {
+          "source_ast_sha256": "5c0ff457c46c4866f15d4867a9c200b99bc72a7591a2de2ee23da75610d8b519",
+          "public_ast_sha256": "5c0ff457c46c4866f15d4867a9c200b99bc72a7591a2de2ee23da75610d8b519",
+          "identical": true
+        },
+        "binary_association": {
+          "source_ast_sha256": "2f43fd9ae6f6b8e364c8d95dcd5b5841cf0061c4cf00a63fe47427ab675a2918",
+          "public_ast_sha256": "2f43fd9ae6f6b8e364c8d95dcd5b5841cf0061c4cf00a63fe47427ab675a2918",
+          "identical": true
+        },
+        "continuous_association": {
+          "source_ast_sha256": "f044bb11c06411778450d6cead6d0833613fb3c479b057aea19566e1fd55cc65",
+          "public_ast_sha256": "f044bb11c06411778450d6cead6d0833613fb3c479b057aea19566e1fd55cc65",
+          "identical": true
+        },
+        "add_q_values": {
+          "source_ast_sha256": "f8eb09dffa7ed4c8331eabea7cd4e94164f10bfab6b1aef21c3d3164a3dba933",
+          "public_ast_sha256": "f8eb09dffa7ed4c8331eabea7cd4e94164f10bfab6b1aef21c3d3164a3dba933",
+          "identical": true
+        },
+        "prediction_table": {
+          "source_ast_sha256": "1bdb61e3bac663aa71d7487aa4920f224588003b51eca58797df503b7100c7c7",
+          "public_ast_sha256": "1bdb61e3bac663aa71d7487aa4920f224588003b51eca58797df503b7100c7c7",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "3057147248abfa41cb3e73a3dc07c8c878b8c00f38214e7baae9e8b06d3accf4",
+          "public_ast_sha256": "3057147248abfa41cb3e73a3dc07c8c878b8c00f38214e7baae9e8b06d3accf4",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/run_2013_symptom_dose_response.py",
+      "public": "analysis_sources/run_2013_symptom_dose_response.py",
+      "source_sha256": "7f4e8af3b64150ac3114e69bedeeebf88d034fc3296e27a0278cbbebb19b342a",
+      "public_sha256": "897ef65b3335272693b65ac3365766cd1a75d72e608eebe38a0d040e23909d6c",
+      "local_imports": [
+        "run_2013_initial_microbiome_signal_probes",
+        "run_2013_locked_primary_16s_analysis"
+      ],
+      "substitutions": [
+        {
+          "line": 48,
+          "reason": "portable module-level path default",
+          "original": "SPECIFICATION = Path(\n    \"docs/research/active/dry_eye_gut_microbiome_scoping_2026/\"\n    \"DOSE_RESPONSE_ANALYSIS_SPECIFICATION_2026-08-24.md\"\n)",
+          "original_sha256": "06eaab50c5eabd00d4bf88757b10afd905f95de341fe50b278b475a185e5680f",
+          "replacement": "SPECIFICATION = Path(__file__).resolve().parents[1] / 'runtime' / 'documentation' / 'DOSE_RESPONSE_ANALYSIS_SPECIFICATION_2026-08-24.md'"
+        },
+        {
+          "line": 52,
+          "reason": "portable module-level path default",
+          "original": "REFERENCE_MATRIX = (\n    PROJECT_ROOT\n    / \"outputs\"\n    / \"coauthor_review_production_2026_08_14\"\n    / \"primary\"\n    / \"locked_primary_16s_association_matrix.csv\"\n)",
+          "original_sha256": "7b9e6bb375be1282bf11ac1e6dc184ad7b490ecc3b20bae0fbec4f0d913c6b2a",
+          "replacement": "REFERENCE_MATRIX = PROJECT_ROOT / 'runtime' / 'coauthor_review_production_2026_08_14' / 'primary' / 'locked_primary_16s_association_matrix.csv'"
+        },
+        {
+          "line": 59,
+          "reason": "portable module-level path default",
+          "original": "DEFAULT_OUT_DIR = PROJECT_ROOT / \"outputs\" / \"symptom_dose_response_2026_08_24\"",
+          "original_sha256": "60be0dd438a54be09968b714ab9b6b1ea906da7b3ed22b82ee7807933659e62f",
+          "replacement": "DEFAULT_OUT_DIR = PROJECT_ROOT / 'runtime' / 'symptom_dose_response_2026_08_24'"
+        },
+        {
+          "line": 727,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "sha256": {
+          "source_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "public_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "identical": true
+        },
+        "write_json": {
+          "source_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "public_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "identical": true
+        },
+        "git_value": {
+          "source_ast_sha256": "83eb128a9c5d93d99a5b310a2ffadfb456b201ca6267e47d9e3e32eb4b643d8f",
+          "public_ast_sha256": "83eb128a9c5d93d99a5b310a2ffadfb456b201ca6267e47d9e3e32eb4b643d8f",
+          "identical": true
+        },
+        "validate_whs_coding": {
+          "source_ast_sha256": "6623127f444e0144216b8ec7bc438b8120157b9d6f6ba2518421c4a49a6ca640",
+          "public_ast_sha256": "6623127f444e0144216b8ec7bc438b8120157b9d6f6ba2518421c4a49a6ca640",
+          "identical": true
+        },
+        "assemble_analysis_population": {
+          "source_ast_sha256": "32ef154635510c6c07ba15bee9ac90dbfb402c11248f63865258e8e8878b9e60",
+          "public_ast_sha256": "32ef154635510c6c07ba15bee9ac90dbfb402c11248f63865258e8e8878b9e60",
+          "identical": true
+        },
+        "group_counts": {
+          "source_ast_sha256": "19099333d1051144ff2a8d02c3f4fef95a0a28477d833443fd055a0c7e31886b",
+          "public_ast_sha256": "19099333d1051144ff2a8d02c3f4fef95a0a28477d833443fd055a0c7e31886b",
+          "identical": true
+        },
+        "fit_binary_fixed_richness": {
+          "source_ast_sha256": "25eca4c76459f2fc1321fe3c17a4505023d43d06a55e318c6732e0d1011e205b",
+          "public_ast_sha256": "25eca4c76459f2fc1321fe3c17a4505023d43d06a55e318c6732e0d1011e205b",
+          "identical": true
+        },
+        "fit_ordered_linear_trend": {
+          "source_ast_sha256": "e3654ed46bb7a62334550b42c7fd2e954dc14389f67184861de8374120a907b1",
+          "public_ast_sha256": "e3654ed46bb7a62334550b42c7fd2e954dc14389f67184861de8374120a907b1",
+          "identical": true
+        },
+        "fit_threshold_ladder": {
+          "source_ast_sha256": "bf932333068b7a1fc51d8fba6e82e0e8cb6500b6dc526a3159d0273a0b90f358",
+          "public_ast_sha256": "bf932333068b7a1fc51d8fba6e82e0e8cb6500b6dc526a3159d0273a0b90f358",
+          "identical": true
+        },
+        "reference_results": {
+          "source_ast_sha256": "696eb99020ca9d08c4f239ec1a171695bc853b234a549a9596d909891b2abbc6",
+          "public_ast_sha256": "696eb99020ca9d08c4f239ec1a171695bc853b234a549a9596d909891b2abbc6",
+          "identical": true
+        },
+        "conservative_alpha_seven_sensitivity": {
+          "source_ast_sha256": "4717bb0598ebc0a011ce7d265507a29334e4cba7f6d169a6c27d232543f83aa1",
+          "public_ast_sha256": "4717bb0598ebc0a011ce7d265507a29334e4cba7f6d169a6c27d232543f83aa1",
+          "identical": true
+        },
+        "reproduce_headline": {
+          "source_ast_sha256": "6d127436107b04c33a79c2e36764967712bf1cd2cd193db67bfd401044557fe1",
+          "public_ast_sha256": "6d127436107b04c33a79c2e36764967712bf1cd2cd193db67bfd401044557fe1",
+          "identical": true
+        },
+        "save_figure": {
+          "source_ast_sha256": "096f55a0d6b1a262f8b9a1c01e08504ba09898c30b655a391ad4105b160414d0",
+          "public_ast_sha256": "096f55a0d6b1a262f8b9a1c01e08504ba09898c30b655a391ad4105b160414d0",
+          "identical": true
+        },
+        "input_provenance": {
+          "source_ast_sha256": "cbc8209e13b1586b9e2e1512fbf634e632510b13e3b12043a6e71c39fa1e1a29",
+          "public_ast_sha256": "cbc8209e13b1586b9e2e1512fbf634e632510b13e3b12043a6e71c39fa1e1a29",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "c362acb3962a1814cacf4e0e5a8206a57a20431a4fbd7a894363e8642d8dd89c",
+          "public_ast_sha256": "c362acb3962a1814cacf4e0e5a8206a57a20431a4fbd7a894363e8642d8dd89c",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/run_2013_publishability_sensitivities.py",
+      "public": "analysis_sources/run_2013_publishability_sensitivities.py",
+      "source_sha256": "a4ffd35070f35ae16c3bcf35a7d477781999f26b3007a176c8ebfd5cbfb2095f",
+      "public_sha256": "e5c55fe95f52a3e0501bd8661bcdf1e16b62c048f2e6cb42c925112da2976fc2",
+      "local_imports": [
+        "run_2013_initial_microbiome_signal_probes",
+        "run_2013_locked_primary_16s_analysis"
+      ],
+      "substitutions": [
+        {
+          "line": 60,
+          "reason": "portable module-level path default",
+          "original": "REFERENCE_PRIMARY_DIR = (\n    PROJECT_ROOT / \"outputs\" / \"coauthor_review_production_2026_08_14\" / \"primary\"\n)",
+          "original_sha256": "2e0bf6db11b2912d23f238255a7db17714dc1d78fc100dbba415f8d6aa05e9a2",
+          "replacement": "REFERENCE_PRIMARY_DIR = PROJECT_ROOT / 'runtime' / 'coauthor_review_production_2026_08_14' / 'primary'"
+        },
+        {
+          "line": 608,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "sha256": {
+          "source_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "public_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "identical": true
+        },
+        "git_value": {
+          "source_ast_sha256": "83eb128a9c5d93d99a5b310a2ffadfb456b201ca6267e47d9e3e32eb4b643d8f",
+          "public_ast_sha256": "83eb128a9c5d93d99a5b310a2ffadfb456b201ca6267e47d9e3e32eb4b643d8f",
+          "identical": true
+        },
+        "write_json": {
+          "source_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "public_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "identical": true
+        },
+        "primary_complete_cases": {
+          "source_ast_sha256": "474bf1b51a237d6a518aa8053c0a00b0b76e00fcd169ded6bf65779222558105",
+          "public_ast_sha256": "474bf1b51a237d6a518aa8053c0a00b0b76e00fcd169ded6bf65779222558105",
+          "identical": true
+        },
+        "reproduce_alpha_family": {
+          "source_ast_sha256": "1d0c0ffd75e3b038962a14b012bd277492b62415a051d60c7a04b3a651348f20",
+          "public_ast_sha256": "1d0c0ffd75e3b038962a14b012bd277492b62415a051d60c7a04b3a651348f20",
+          "identical": true
+        },
+        "compare_headline_to_reference": {
+          "source_ast_sha256": "c53d5744723f723c02bbf5e73982d9a8af2903dc285f801247d8cdc957a64e6c",
+          "public_ast_sha256": "c53d5744723f723c02bbf5e73982d9a8af2903dc285f801247d8cdc957a64e6c",
+          "identical": true
+        },
+        "classify_pair_structure": {
+          "source_ast_sha256": "5a877492b51e53b35e7f6585ad5a5d600318670dfce4879c7dc54b215f5f432d",
+          "public_ast_sha256": "5a877492b51e53b35e7f6585ad5a5d600318670dfce4879c7dc54b215f5f432d",
+          "identical": true
+        },
+        "within_pair_analysis": {
+          "source_ast_sha256": "3fb346a788393f4f0f0b3e323d130a5c72b362890fd1b4833d8e921d6dad629b",
+          "public_ast_sha256": "3fb346a788393f4f0f0b3e323d130a5c72b362890fd1b4833d8e921d6dad629b",
+          "identical": true
+        },
+        "timing_summaries": {
+          "source_ast_sha256": "7773ebb3c4a62d211e8aa9851bb1bc014baf80c541c734cce2206c60fe3f0442",
+          "public_ast_sha256": "7773ebb3c4a62d211e8aa9851bb1bc014baf80c541c734cce2206c60fe3f0442",
+          "identical": true
+        },
+        "timing_interaction_analysis": {
+          "source_ast_sha256": "d380bc6fb2b40283aa7983087cd9a60e404a5d23de25a8539236310a365d01f8",
+          "public_ast_sha256": "d380bc6fb2b40283aa7983087cd9a60e404a5d23de25a8539236310a365d01f8",
+          "identical": true
+        },
+        "source_provenance": {
+          "source_ast_sha256": "98f430e428a201b737d314046a7468341b07d316f62b1b7f261d098a62c951fe",
+          "public_ast_sha256": "98f430e428a201b737d314046a7468341b07d316f62b1b7f261d098a62c951fe",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "714d31772b978edbc9351ebe424ed81652c4425019129fe6d1891344e674e836",
+          "public_ast_sha256": "714d31772b978edbc9351ebe424ed81652c4425019129fe6d1891344e674e836",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/run_2013_twin_relatedness_extension.py",
+      "public": "analysis_sources/run_2013_twin_relatedness_extension.py",
+      "source_sha256": "5b6d1275e2612fe946ec44547063d425bb76164874caa3c52d9dc481228b94ee",
+      "public_sha256": "6852a684af8379af782d680e22d9bb7a02b06044ed645f0993b88d4b657397ba",
+      "local_imports": [
+        "run_2013_initial_microbiome_signal_probes",
+        "run_2013_locked_primary_16s_analysis",
+        "run_2013_publishability_sensitivities"
+      ],
+      "substitutions": [
+        {
+          "line": 47,
+          "reason": "portable module-level path default",
+          "original": "OUTPUT_DIR = PROJECT_ROOT / \"outputs\" / \"twin_relatedness_extension_2026_08_28\"",
+          "original_sha256": "d863ce56f0839749de2da6e2b8ea2c048b1b97397e73659cd952bbd9a1befbe9",
+          "replacement": "OUTPUT_DIR = PROJECT_ROOT / 'runtime' / 'twin_relatedness_extension_2026_08_28'"
+        },
+        {
+          "line": 576,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "write_json": {
+          "source_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "public_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "identical": true
+        },
+        "git_value": {
+          "source_ast_sha256": "83eb128a9c5d93d99a5b310a2ffadfb456b201ca6267e47d9e3e32eb4b643d8f",
+          "public_ast_sha256": "83eb128a9c5d93d99a5b310a2ffadfb456b201ca6267e47d9e3e32eb4b643d8f",
+          "identical": true
+        },
+        "normal_ci": {
+          "source_ast_sha256": "9544646ae148f1903ffa728c22533ac95677bf9edfd91b564390c4862a544f9b",
+          "public_ast_sha256": "9544646ae148f1903ffa728c22533ac95677bf9edfd91b564390c4862a544f9b",
+          "identical": true
+        },
+        "normalize_zygosity": {
+          "source_ast_sha256": "43aa695b8213232c787b1b53fbd5e07b15e4d9eae4aa35557d8c702e5459e21d",
+          "public_ast_sha256": "43aa695b8213232c787b1b53fbd5e07b15e4d9eae4aa35557d8c702e5459e21d",
+          "identical": true
+        },
+        "assign_pair_zygosity": {
+          "source_ast_sha256": "532ca10b399c843d6f59cbf55e47db97fbd978b1767faecb27c4f67379142cf8",
+          "public_ast_sha256": "532ca10b399c843d6f59cbf55e47db97fbd978b1767faecb27c4f67379142cf8",
+          "identical": true
+        },
+        "build_analysis_cohort": {
+          "source_ast_sha256": "599f5e667a3a765a2944b661612813c611b9f017befeb7f3742c129a8572197b",
+          "public_ast_sha256": "599f5e667a3a765a2944b661612813c611b9f017befeb7f3742c129a8572197b",
+          "identical": true
+        },
+        "two_person_pairs": {
+          "source_ast_sha256": "98ebbbf31565a364f1db5bff10d027e56cfe34d4225126d6651c2ba6133f4fba",
+          "public_ast_sha256": "98ebbbf31565a364f1db5bff10d027e56cfe34d4225126d6651c2ba6133f4fba",
+          "identical": true
+        },
+        "summarize_pair_structure": {
+          "source_ast_sha256": "e2416337c383ac9e9413ed8baaaf3277bbaad9326acece2a57a42b6f34d0a799",
+          "public_ast_sha256": "e2416337c383ac9e9413ed8baaaf3277bbaad9326acece2a57a42b6f34d0a799",
+          "identical": true
+        },
+        "fit_conditional_logit": {
+          "source_ast_sha256": "595de20e035c1bd2f3dbf6ecc0755661b9ee202518191ce93d0296f0c41b3d58",
+          "public_ast_sha256": "595de20e035c1bd2f3dbf6ecc0755661b9ee202518191ce93d0296f0c41b3d58",
+          "identical": true
+        },
+        "fit_binary_zygosity_interaction": {
+          "source_ast_sha256": "03e75da4faf3dde71d465cc53d6bf839f753f5e428802c4f0689504964caeb40",
+          "public_ast_sha256": "03e75da4faf3dde71d465cc53d6bf839f753f5e428802c4f0689504964caeb40",
+          "identical": true
+        },
+        "encoded_predictors": {
+          "source_ast_sha256": "71d018c8a51c82678cf0b24435b2769db4d5d443d0fe2bf53c9248c444cc6d39",
+          "public_ast_sha256": "71d018c8a51c82678cf0b24435b2769db4d5d443d0fe2bf53c9248c444cc6d39",
+          "identical": true
+        },
+        "pair_difference_frame": {
+          "source_ast_sha256": "fbf87e09d5b11629a392049229bef817a4650e4e460fe6981fe9f4f2757618fe",
+          "public_ast_sha256": "fbf87e09d5b11629a392049229bef817a4650e4e460fe6981fe9f4f2757618fe",
+          "identical": true
+        },
+        "fit_score_difference_model": {
+          "source_ast_sha256": "025ecf736c90009216e4a8cc67fff97b023c4290dbc6fdd4c942fa200c9b8f6c",
+          "public_ast_sha256": "025ecf736c90009216e4a8cc67fff97b023c4290dbc6fdd4c942fa200c9b8f6c",
+          "identical": true
+        },
+        "fit_score_zygosity_interaction": {
+          "source_ast_sha256": "2970ecc73af7fc494d010d6071372e253b1f8b762a46df642ef80415061e5594",
+          "public_ast_sha256": "2970ecc73af7fc494d010d6071372e253b1f8b762a46df642ef80415061e5594",
+          "identical": true
+        },
+        "fit_within_between_model": {
+          "source_ast_sha256": "ad4751e123c4898ffc90607cb4522acfd5090d0161f7192abacd6f474852510e",
+          "public_ast_sha256": "ad4751e123c4898ffc90607cb4522acfd5090d0161f7192abacd6f474852510e",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "8f25e7f645592e535fb2aeab04260021fa34d10808d75ce8ff6ae92ccdfb0a57",
+          "public_ast_sha256": "8f25e7f645592e535fb2aeab04260021fa34d10808d75ce8ff6ae92ccdfb0a57",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/run_2013_method_strengthening_batch.py",
+      "public": "analysis_sources/run_2013_method_strengthening_batch.py",
+      "source_sha256": "5b7a257108367d28d47fc0182fa18b14fdc54825c1b3c894c8e198749e8d0eee",
+      "public_sha256": "3e9869a6c5599d89eee0eb1806535f47ec49bd97d49a0d531216bed1449547b8",
+      "local_imports": [
+        "run_2013_initial_microbiome_signal_probes",
+        "run_2013_locked_primary_16s_analysis"
+      ],
+      "substitutions": [
+        {
+          "line": 43,
+          "reason": "portable module-level path default",
+          "original": "DEFAULT_OUT_DIR = PROJECT_ROOT / \"outputs\" / \"method_strengthening_2013\"",
+          "original_sha256": "6a1c8eab8dbe3a130128d8eb79a17e7c1d968cb26f70521e40ecba576a3e156d",
+          "replacement": "DEFAULT_OUT_DIR = PROJECT_ROOT / 'runtime' / 'method_strengthening_2013'"
+        },
+        {
+          "line": 646,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    warnings.filterwarnings(\"ignore\", category=RuntimeWarning)\n    raise SystemExit(main())",
+          "original_sha256": "527f2aa63885b20c58d99e0b9c515c66c62a26a583405d8ef762a8cd13227c48",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "write_table": {
+          "source_ast_sha256": "ddbe474082514b13cd4249e4d54bf3729e72410cc95a5ea30e57b23e28facb21",
+          "public_ast_sha256": "ddbe474082514b13cd4249e4d54bf3729e72410cc95a5ea30e57b23e28facb21",
+          "identical": true
+        },
+        "load_joined_inputs": {
+          "source_ast_sha256": "96d78c0b473251da06474097160c77e135ba890c282ca15077f5d7a87e14967d",
+          "public_ast_sha256": "96d78c0b473251da06474097160c77e135ba890c282ca15077f5d7a87e14967d",
+          "identical": true
+        },
+        "collapse_genus_counts": {
+          "source_ast_sha256": "6c9ce8baef449debd3d0bc3dee4671cf6366a213cdaa7206ccb6d0dfa0399c1e",
+          "public_ast_sha256": "6c9ce8baef449debd3d0bc3dee4671cf6366a213cdaa7206ccb6d0dfa0399c1e",
+          "identical": true
+        },
+        "expected_rarefied_richness": {
+          "source_ast_sha256": "b59edbd98828d01571f417344444cfc7b6ee2e1984c18eba2cb080f891cec59d",
+          "public_ast_sha256": "b59edbd98828d01571f417344444cfc7b6ee2e1984c18eba2cb080f891cec59d",
+          "identical": true
+        },
+        "primary_covariates": {
+          "source_ast_sha256": "1f2318fc2e0c2ad0d739faf24c741fa0c8056c37fd97af76a1a823106bdb446d",
+          "public_ast_sha256": "1f2318fc2e0c2ad0d739faf24c741fa0c8056c37fd97af76a1a823106bdb446d",
+          "identical": true
+        },
+        "run_rarefaction_sensitivity": {
+          "source_ast_sha256": "9bb98c1dfa937bdf89e1925ec17b94186d1b4ce515da9b1e16a717e7aeec9f07",
+          "public_ast_sha256": "9bb98c1dfa937bdf89e1925ec17b94186d1b4ce515da9b1e16a717e7aeec9f07",
+          "identical": true
+        },
+        "design_matrix": {
+          "source_ast_sha256": "41e656dec1ac29df45b2be8c4d1f126d7beb48cf7ab8293fd42136c9bf0e5be1",
+          "public_ast_sha256": "41e656dec1ac29df45b2be8c4d1f126d7beb48cf7ab8293fd42136c9bf0e5be1",
+          "identical": true
+        },
+        "residualize_matrix": {
+          "source_ast_sha256": "3103730ef1944631be50d82f821104aaaf2a61cfa0ef950a20a25912d24c748e",
+          "public_ast_sha256": "3103730ef1944631be50d82f821104aaaf2a61cfa0ef950a20a25912d24c748e",
+          "identical": true
+        },
+        "_orthonormal_basis": {
+          "source_ast_sha256": "a9b8cfb5bd8941dc5c18b159398adfc6bb50b6b1541fe84bb7e5ab863ba287ec",
+          "public_ast_sha256": "a9b8cfb5bd8941dc5c18b159398adfc6bb50b6b1541fe84bb7e5ab863ba287ec",
+          "identical": true
+        },
+        "_residualize": {
+          "source_ast_sha256": "b76ce5292370e0ab989c110a78b55c78dfed340ccaa7a1664d1c1615af962b5a",
+          "public_ast_sha256": "b76ce5292370e0ab989c110a78b55c78dfed340ccaa7a1664d1c1615af962b5a",
+          "identical": true
+        },
+        "_permute_family_blocks": {
+          "source_ast_sha256": "6acf0cdeb1e96670f217aad0e8eff94353f4eaf12ea34573c5de0662504d599d",
+          "public_ast_sha256": "6acf0cdeb1e96670f217aad0e8eff94353f4eaf12ea34573c5de0662504d599d",
+          "identical": true
+        },
+        "_partial_multivariate_statistic": {
+          "source_ast_sha256": "037b694d3a574b0c113a82970252dda38d90db66aef510caf192abcc897ef522",
+          "public_ast_sha256": "037b694d3a574b0c113a82970252dda38d90db66aef510caf192abcc897ef522",
+          "identical": true
+        },
+        "permanova_freedman_lane": {
+          "source_ast_sha256": "ba2af8777487af46a37edf69e91c7fb52a4dc9da5d90a98d6d50a318185e55be",
+          "public_ast_sha256": "ba2af8777487af46a37edf69e91c7fb52a4dc9da5d90a98d6d50a318185e55be",
+          "identical": true
+        },
+        "one_per_family_dispersion": {
+          "source_ast_sha256": "2a1d27caba625a0bdd1fddb07afefc8b4e5c3e34330f992aee58b2573175b337",
+          "public_ast_sha256": "2a1d27caba625a0bdd1fddb07afefc8b4e5c3e34330f992aee58b2573175b337",
+          "identical": true
+        },
+        "run_beta_diversity": {
+          "source_ast_sha256": "67d486fcbd3c568e3c40bcdf05b4e2364590ce090a136f517a0653d32ca38770",
+          "public_ast_sha256": "67d486fcbd3c568e3c40bcdf05b4e2364590ce090a136f517a0653d32ca38770",
+          "identical": true
+        },
+        "run_clr_candidate_sensitivity": {
+          "source_ast_sha256": "1380dfa4a1c4b350b0e61b6c9f2105955a61aa05fa63711f8c09285c41c04fbc",
+          "public_ast_sha256": "1380dfa4a1c4b350b0e61b6c9f2105955a61aa05fa63711f8c09285c41c04fbc",
+          "identical": true
+        },
+        "load_ibs": {
+          "source_ast_sha256": "1b46546680543084f0e820822ac224103a17cf3bf1eae7428234554a766d883c",
+          "public_ast_sha256": "1b46546680543084f0e820822ac224103a17cf3bf1eae7428234554a766d883c",
+          "identical": true
+        },
+        "run_ibs_sensitivity": {
+          "source_ast_sha256": "cd88921e80c60aa538deced98aa9f997629b46f4d7fee5a5378c784b871c5083",
+          "public_ast_sha256": "cd88921e80c60aa538deced98aa9f997629b46f4d7fee5a5378c784b871c5083",
+          "identical": true
+        },
+        "run_sequencing_run_sensitivity": {
+          "source_ast_sha256": "50c5c848dec8fa43c57ecf17b36799fa8603853b6bf68e41d80db86a43b04185",
+          "public_ast_sha256": "50c5c848dec8fa43c57ecf17b36799fa8603853b6bf68e41d80db86a43b04185",
+          "identical": true
+        },
+        "write_summary_figure": {
+          "source_ast_sha256": "ea965048750bb6abdc707bec49f0557bfed5e66fed057a19d2253bdcd8a4af50",
+          "public_ast_sha256": "ea965048750bb6abdc707bec49f0557bfed5e66fed057a19d2253bdcd8a4af50",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "135ed6b4f48938ed5c1d1d97f1656455af72bffa97821b4a18251eddde1b0e31",
+          "public_ast_sha256": "135ed6b4f48938ed5c1d1d97f1656455af72bffa97821b4a18251eddde1b0e31",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/run_2013_microbiome_pipeline_gap_analysis.py",
+      "public": "analysis_sources/run_2013_microbiome_pipeline_gap_analysis.py",
+      "source_sha256": "4c04de8c3748681527c22b5a2bafdf8aa313064888d357f9cc42417f50faeb3b",
+      "public_sha256": "1709966fe0f88f3e01b6b46a177561933e840102edd937d6df84c02b73fc34ea",
+      "local_imports": [
+        "run_2013_initial_microbiome_signal_probes",
+        "run_2013_locked_primary_16s_analysis",
+        "run_2013_method_strengthening_batch"
+      ],
+      "substitutions": [
+        {
+          "line": 51,
+          "reason": "portable module-level path default",
+          "original": "DEFAULT_OUT_DIR = PROJECT_ROOT / \"outputs\" / \"microbiome_pipeline_gap_analysis_2026_08_25\"",
+          "original_sha256": "172656778cbb31f2b5482c453967c8f8c216359aa6c68ffbff324ad418556907",
+          "replacement": "DEFAULT_OUT_DIR = PROJECT_ROOT / 'runtime' / 'microbiome_pipeline_gap_analysis_2026_08_25'"
+        },
+        {
+          "line": 59,
+          "reason": "portable module-level path default",
+          "original": "FORMAL_INPUT_DIR = (\n    PROJECT_ROOT\n    / \"outputs\"\n    / \"coauthor_review_production_2026_08_14\"\n    / \"formal_inputs\"\n    / \"highly_symptomatic_and\"\n)",
+          "original_sha256": "b655f3c20fbed80152664a4552a5c8a12c6531512ea5027b490ba8a76459ec15",
+          "replacement": "FORMAL_INPUT_DIR = PROJECT_ROOT / 'runtime' / 'coauthor_review_production_2026_08_14' / 'formal_inputs' / 'highly_symptomatic_and'"
+        },
+        {
+          "line": 800,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    warnings.filterwarnings(\"ignore\", category=RuntimeWarning)\n    raise SystemExit(main())",
+          "original_sha256": "527f2aa63885b20c58d99e0b9c515c66c62a26a583405d8ef762a8cd13227c48",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "write_json": {
+          "source_ast_sha256": "06ed586cc6f8afb66b3af94b5b7e18cb6972223f3bc3304309d2f59d5f1f9356",
+          "public_ast_sha256": "06ed586cc6f8afb66b3af94b5b7e18cb6972223f3bc3304309d2f59d5f1f9356",
+          "identical": true
+        },
+        "write_table": {
+          "source_ast_sha256": "9f227da0cf0172f65f4edbca240394cccc315c64a8a9569fa3dc4cfaa0ade93a",
+          "public_ast_sha256": "9f227da0cf0172f65f4edbca240394cccc315c64a8a9569fa3dc4cfaa0ade93a",
+          "identical": true
+        },
+        "sha256_file": {
+          "source_ast_sha256": "fe6b4455bfdf43b8655abd9e59340c8c9ed888fb6aad5fdcff8663e442fba293",
+          "public_ast_sha256": "fe6b4455bfdf43b8655abd9e59340c8c9ed888fb6aad5fdcff8663e442fba293",
+          "identical": true
+        },
+        "primary_covariates": {
+          "source_ast_sha256": "1f2318fc2e0c2ad0d739faf24c741fa0c8056c37fd97af76a1a823106bdb446d",
+          "public_ast_sha256": "1f2318fc2e0c2ad0d739faf24c741fa0c8056c37fd97af76a1a823106bdb446d",
+          "identical": true
+        },
+        "add_bh": {
+          "source_ast_sha256": "1c16cced449955653a9d5b6df77bb5afa7d593dc4c7120eca4173375af0d7882",
+          "public_ast_sha256": "1c16cced449955653a9d5b6df77bb5afa7d593dc4c7120eca4173375af0d7882",
+          "identical": true
+        },
+        "feature_descriptives": {
+          "source_ast_sha256": "7ad5e097bd5e063b5a017dfae5bd6536740761c346ed08ea22a1ffe1381f0f33",
+          "public_ast_sha256": "7ad5e097bd5e063b5a017dfae5bd6536740761c346ed08ea22a1ffe1381f0f33",
+          "identical": true
+        },
+        "association_row": {
+          "source_ast_sha256": "5fb6ea8eb7206db812925cee79cf2611dcb260ebef98c056974f51b1c3ed8448",
+          "public_ast_sha256": "5fb6ea8eb7206db812925cee79cf2611dcb260ebef98c056974f51b1c3ed8448",
+          "identical": true
+        },
+        "hill_numbers": {
+          "source_ast_sha256": "e29afe7b390f8b401667fba8bbf9d222d01dcc4e2d6c7bd9e2d5b40652000ab5",
+          "public_ast_sha256": "e29afe7b390f8b401667fba8bbf9d222d01dcc4e2d6c7bd9e2d5b40652000ab5",
+          "identical": true
+        },
+        "grouped_richness": {
+          "source_ast_sha256": "c9560fe0d52e16a3e9f2985add2c5a935aee23bb94829019ad6f67e09faee52a",
+          "public_ast_sha256": "c9560fe0d52e16a3e9f2985add2c5a935aee23bb94829019ad6f67e09faee52a",
+          "identical": true
+        },
+        "gower_center": {
+          "source_ast_sha256": "a4dc40b1262e59a770626a64ab0a0555917c3ab350cb1cb7c96e7d903772520e",
+          "public_ast_sha256": "a4dc40b1262e59a770626a64ab0a0555917c3ab350cb1cb7c96e7d903772520e",
+          "identical": true
+        },
+        "distance_partial_test": {
+          "source_ast_sha256": "382dcc6226634e4f31a7d508ee9313f3c46af6d140cf008bc96d7569a4e58209",
+          "public_ast_sha256": "382dcc6226634e4f31a7d508ee9313f3c46af6d140cf008bc96d7569a4e58209",
+          "identical": true
+        },
+        "distance_dispersion_test": {
+          "source_ast_sha256": "ab4664580a35696db90629ee2ff97a3eca9bb075b18afd1d22a3a8a3fbfa492d",
+          "public_ast_sha256": "ab4664580a35696db90629ee2ff97a3eca9bb075b18afd1d22a3a8a3fbfa492d",
+          "identical": true
+        },
+        "run_community_tests": {
+          "source_ast_sha256": "683b96a7f3ad8fd08de11333eda3ecdc767877d43da0312615c69642e15f9066",
+          "public_ast_sha256": "683b96a7f3ad8fd08de11333eda3ecdc767877d43da0312615c69642e15f9066",
+          "identical": true
+        },
+        "tree_feasibility": {
+          "source_ast_sha256": "5850f35b2eee6bac206a5cbeda42fec428e5e1f06f023fb08eb26c7305b2ce41",
+          "public_ast_sha256": "5850f35b2eee6bac206a5cbeda42fec428e5e1f06f023fb08eb26c7305b2ce41",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "2effc72a4219d1741be7a06472148fef23f9fa83e88eaf06ca810fb43cc4d9e8",
+          "public_ast_sha256": "2effc72a4219d1741be7a06472148fef23f9fa83e88eaf06ca810fb43cc4d9e8",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/audit_2013_time_near_confounders.py",
+      "public": "analysis_sources/audit_2013_time_near_confounders.py",
+      "source_sha256": "90eca99635621a0f6c491e96264262facc09b15668550e1e7f65a6c0a2d7bc9b",
+      "public_sha256": "e07e37085cce47e198ed02206145e4455e3cc3c7c326d8c055e0159dbe333f92",
+      "local_imports": [
+        "run_2013_initial_microbiome_signal_probes",
+        "run_2013_locked_primary_16s_analysis",
+        "run_2013_publishability_sensitivities"
+      ],
+      "substitutions": [
+        {
+          "line": 33,
+          "reason": "portable module-level path default",
+          "original": "CANONICAL_ROOT = Path(\n    \"research_projects/longitudinal_DED_paper/source_data/canonical_questionnaires\"\n)",
+          "original_sha256": "478bc2f8d1fdfe06118bc74df0f52675842588610c5cfbbd5c9aac1aaa766c5a",
+          "replacement": "CANONICAL_ROOT = Path(__file__).resolve().parents[1] / 'authorized_inputs' / 'canonical_questionnaires'"
+        },
+        {
+          "line": 467,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "write_json": {
+          "source_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "public_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "identical": true
+        },
+        "build_main_cohort": {
+          "source_ast_sha256": "18ee81cc7041b0546cd05cc8d52d2e52157f68690698c25303c2c2d68046cb7d",
+          "public_ast_sha256": "18ee81cc7041b0546cd05cc8d52d2e52157f68690698c25303c2c2d68046cb7d",
+          "identical": true
+        },
+        "fit_targeted_ibs_sensitivity": {
+          "source_ast_sha256": "fd3c44b3ade182f1d450f68f74242f82c1d880acc7751aab019eb8951a63127e",
+          "public_ast_sha256": "fd3c44b3ade182f1d450f68f74242f82c1d880acc7751aab019eb8951a63127e",
+          "identical": true
+        },
+        "select_candidate_questions": {
+          "source_ast_sha256": "2ce8823f9eb1e1c985ec53375845e7a776b94c5940eed1d46b61f1473867443c",
+          "public_ast_sha256": "2ce8823f9eb1e1c985ec53375845e7a776b94c5940eed1d46b61f1473867443c",
+          "identical": true
+        },
+        "load_relevant_responses": {
+          "source_ast_sha256": "47fa40c66abc880c272bf8f9209e9926e792ee21a5c3a63b42640d5af64fca2c",
+          "public_ast_sha256": "47fa40c66abc880c272bf8f9209e9926e792ee21a5c3a63b42640d5af64fca2c",
+          "identical": true
+        },
+        "meaningful_mask": {
+          "source_ast_sha256": "d761cda3b3e216b34635b243e37ad1585c0cafee804f62f9bcc868c53e657409",
+          "public_ast_sha256": "d761cda3b3e216b34635b243e37ad1585c0cafee804f62f9bcc868c53e657409",
+          "identical": true
+        },
+        "summarize_candidates": {
+          "source_ast_sha256": "7f0413ab6c1c3760c0c46cf5d0ffdce8d8a6a6b2badc5480d56a85732e9073dd",
+          "public_ast_sha256": "7f0413ab6c1c3760c0c46cf5d0ffdce8d8a6a6b2badc5480d56a85732e9073dd",
+          "identical": true
+        },
+        "summarize_questions": {
+          "source_ast_sha256": "c147d373d7c5954387c549dfb5fafd2fdb22d4c78d7a59daddd7da89a097258b",
+          "public_ast_sha256": "c147d373d7c5954387c549dfb5fafd2fdb22d4c78d7a59daddd7da89a097258b",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "1ef754df228be2cb338e8e4e92118e1d2c5faeb5721b7a4c2e1e83e47fb7367b",
+          "public_ast_sha256": "1ef754df228be2cb338e8e4e92118e1d2c5faeb5721b7a4c2e1e83e47fb7367b",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/audit_antibiotic_metadata_assumption.py",
+      "public": "analysis_sources/audit_antibiotic_metadata_assumption.py",
+      "source_sha256": "4e23a7b6589f76411db474f897a62b64c740ad6124dd122cfa04daefc2ece599",
+      "public_sha256": "bd771986b96a6e387b14ab2999965b8864784b4f9e1bff1f2141fd69497c3d17",
+      "local_imports": [
+        "run_2013_adjusted_probability_contrast",
+        "run_2013_initial_microbiome_signal_probes"
+      ],
+      "substitutions": [
+        {
+          "line": 22,
+          "reason": "portable module-level path default",
+          "original": "DEFAULT_OUT_DIR = PROJECT_ROOT / \"outputs\" / \"antibiotic_metadata_assumption_2026_08_24\"",
+          "original_sha256": "f0ff5836cc335d0b72e13c47a1e5eff241c4a1708296528d658552f94d9b5b3b",
+          "replacement": "DEFAULT_OUT_DIR = PROJECT_ROOT / 'runtime' / 'antibiotic_metadata_assumption_2026_08_24'"
+        },
+        {
+          "line": 191,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "write_json": {
+          "source_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "public_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "identical": true
+        },
+        "fit_scenario": {
+          "source_ast_sha256": "b6681d413f72c7969a87614be9c4f71bf6e6ead4f42c258f11b5e95134af655d",
+          "public_ast_sha256": "b6681d413f72c7969a87614be9c4f71bf6e6ead4f42c258f11b5e95134af655d",
+          "identical": true
+        },
+        "raw_mapping_summary": {
+          "source_ast_sha256": "2ce66cc5653f5c38146942ec76cfaf065e0fbdf49be7d246782e52b463575fc7",
+          "public_ast_sha256": "2ce66cc5653f5c38146942ec76cfaf065e0fbdf49be7d246782e52b463575fc7",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "15f888c4a8d7f8a73682716f38032c544b9b3ff9f5ecfd0d11802c322520d45f",
+          "public_ast_sha256": "15f888c4a8d7f8a73682716f38032c544b9b3ff9f5ecfd0d11802c322520d45f",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/run_2013_adjusted_probability_contrast.py",
+      "public": "analysis_sources/run_2013_adjusted_probability_contrast.py",
+      "source_sha256": "151aeb24f9e93b99c39eeca30c8ef02ec97e3107c51355e9a4b08c0749564134",
+      "public_sha256": "727c519294bc23e8233b0ef8925011cff3030bc83d1e9133d883cddfcfdbc5db",
+      "local_imports": [
+        "run_2013_initial_microbiome_signal_probes",
+        "run_2013_locked_primary_16s_analysis"
+      ],
+      "substitutions": [
+        {
+          "line": 45,
+          "reason": "portable module-level path default",
+          "original": "ALPHA_RESULTS = (\n    PROJECT_ROOT\n    / \"outputs\"\n    / \"coauthor_review_production_2026_08_14\"\n    / \"primary\"\n    / \"locked_primary_16s_association_matrix.csv\"\n)",
+          "original_sha256": "3aa2895976f74c49bb4e5cd1127e85e01e6653e0c10512eaf0b52c5700a5f284",
+          "replacement": "ALPHA_RESULTS = PROJECT_ROOT / 'runtime' / 'coauthor_review_production_2026_08_14' / 'primary' / 'locked_primary_16s_association_matrix.csv'"
+        },
+        {
+          "line": 421,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "sha256": {
+          "source_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "public_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "identical": true
+        },
+        "write_json": {
+          "source_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "public_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "identical": true
+        },
+        "assemble_main_cohort": {
+          "source_ast_sha256": "49179cefe18fcffa5d127ae0ac6ab5e10d2b0a3902328389dfc676585fcd651d",
+          "public_ast_sha256": "49179cefe18fcffa5d127ae0ac6ab5e10d2b0a3902328389dfc676585fcd651d",
+          "identical": true
+        },
+        "prepare_design": {
+          "source_ast_sha256": "9058da9c9f2b72ea156cd769a06d50e6c266596b0e68e13268a93c9774cebd83",
+          "public_ast_sha256": "9058da9c9f2b72ea156cd769a06d50e6c266596b0e68e13268a93c9774cebd83",
+          "identical": true
+        },
+        "standardized_probabilities": {
+          "source_ast_sha256": "b125162e8360f15531a8c18ed579c86360ce133d807a51de8bad2b8f5616b892",
+          "public_ast_sha256": "b125162e8360f15531a8c18ed579c86360ce133d807a51de8bad2b8f5616b892",
+          "identical": true
+        },
+        "fit_point_model": {
+          "source_ast_sha256": "070c6b73a60630548815b9d3f66efe24db491119cee1cb58d0ed92f152c7f257",
+          "public_ast_sha256": "070c6b73a60630548815b9d3f66efe24db491119cee1cb58d0ed92f152c7f257",
+          "identical": true
+        },
+        "family_cluster_bootstrap": {
+          "source_ast_sha256": "0b1da971e74765a484e012d956e786d466eefd0654ea8c9e3b15f4119a405bad",
+          "public_ast_sha256": "0b1da971e74765a484e012d956e786d466eefd0654ea8c9e3b15f4119a405bad",
+          "identical": true
+        },
+        "percentile_interval": {
+          "source_ast_sha256": "b1da124d52bd796417e90d6d27d9e62dd14966e705c55735d37d63e3680f1514",
+          "public_ast_sha256": "b1da124d52bd796417e90d6d27d9e62dd14966e705c55735d37d63e3680f1514",
+          "identical": true
+        },
+        "build_story_figure": {
+          "source_ast_sha256": "1becf47755994d25c48bd5bf90a7cc5445c6c8a4c5738f31319c2fccdbf19174",
+          "public_ast_sha256": "1becf47755994d25c48bd5bf90a7cc5445c6c8a4c5738f31319c2fccdbf19174",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "6e41f07c38e00150d4e09e3af8afd2d2c930e31e62f02331d052177b175c97fe",
+          "public_ast_sha256": "6e41f07c38e00150d4e09e3af8afd2d2c930e31e62f02331d052177b175c97fe",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/build_2013_ancombc2_inputs.py",
+      "public": "analysis_sources/build_2013_ancombc2_inputs.py",
+      "source_sha256": "d07e65767067c8d72a394e6f9f0a01197982e1e21fbfa0345ecd6b852bd508c3",
+      "public_sha256": "1daf5abd4a9a66f353967ca1cfc4c7c2da975b2a3a2fafb82878c7aaa8bcdbf2",
+      "local_imports": [
+        "run_2013_initial_microbiome_signal_probes",
+        "run_2013_locked_primary_16s_analysis",
+        "run_2013_method_strengthening_batch"
+      ],
+      "substitutions": [
+        {
+          "line": 17,
+          "reason": "portable module-level path default",
+          "original": "DEFAULT_OUT_DIR = PROJECT_ROOT / \"outputs\" / \"ancombc2_2013_inputs\"",
+          "original_sha256": "5bc9c05bce43d7578abc4abf35b7faffd112a54b896a23387ea1066e94a6a014",
+          "replacement": "DEFAULT_OUT_DIR = PROJECT_ROOT / 'runtime' / 'ancombc2_2013_inputs'"
+        },
+        {
+          "line": 176,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "write_json": {
+          "source_ast_sha256": "0d0eacaef4f14cea97481a9b811cd4b2a194c2d6acc6299edc0400201e75e40a",
+          "public_ast_sha256": "0d0eacaef4f14cea97481a9b811cd4b2a194c2d6acc6299edc0400201e75e40a",
+          "identical": true
+        },
+        "clean_counts": {
+          "source_ast_sha256": "5e8901f333df04d26f9915d388115acf0abed48512b93af4c8f0d3edede1aaa5",
+          "public_ast_sha256": "5e8901f333df04d26f9915d388115acf0abed48512b93af4c8f0d3edede1aaa5",
+          "identical": true
+        },
+        "build_outcome_inputs": {
+          "source_ast_sha256": "502d17b3bc2306f60accb1779cf3286c421a4b64b02010b8183da85c3be9223f",
+          "public_ast_sha256": "502d17b3bc2306f60accb1779cf3286c421a4b64b02010b8183da85c3be9223f",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "c4639f57c94bcaf42550ba985ea72e96e331f4ec05950ff1814919bd30b4a2c6",
+          "public_ast_sha256": "c4639f57c94bcaf42550ba985ea72e96e331f4ec05950ff1814919bd30b4a2c6",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/export_v42_model_coefficients.py",
+      "public": "analysis_sources/export_v42_model_coefficients.py",
+      "source_sha256": "f38a78edb38646bbf181213f208b381797ceba065b8611b04a507d582f5fbf44",
+      "public_sha256": "cd48e1cc027a62cebfb9d34f164c204a98ba9549169916ac6257283df9ed37d2",
+      "local_imports": [
+        "run_2013_symptom_dose_response",
+        "run_2013_twin_family_signal_revision"
+      ],
+      "substitutions": [
+        {
+          "line": 24,
+          "reason": "portable module-level path default",
+          "original": "PACKAGE = PROJECT_ROOT / 'manuscript/no_external_validation_branch_2026-08-23'",
+          "original_sha256": "3cf79bc0197f7ba570c16e79a870dfb75f38d6f975b5d71128794a48053b0c18",
+          "replacement": "PACKAGE = Path(__file__).resolve().parents[1] / 'runtime' / 'manuscript_assets'"
+        },
+        {
+          "line": 25,
+          "reason": "portable module-level path default",
+          "original": "OUT = PROJECT_ROOT / 'outputs/hugo_model_reporting_2026_09_07'",
+          "original_sha256": "4494a0ca81e7573f8eb3ead7738b3fd7e0f6f456fd592c7877159b25d7af8aa7",
+          "replacement": "OUT = PROJECT_ROOT / 'runtime/hugo_model_reporting_2026_09_07'"
+        },
+        {
+          "line": 184,
+          "reason": "disable original standalone execution",
+          "original": "if __name__=='__main__':\n    if '--render-only' in sys.argv:\n        render_table(pd.read_csv(OUT/'all_model_coefficients.csv'))\n    else:\n        main()",
+          "original_sha256": "eb6af83def5e25afe958365bce10a7a2c8e7526b2fa5ec9d2e5a4b4c5939291c",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "check": {
+          "source_ast_sha256": "9f6139db26290e1789ccbd54559f444a6c840421de4a319c9e22d12a6be8b7a1",
+          "public_ast_sha256": "9f6139db26290e1789ccbd54559f444a6c840421de4a319c9e22d12a6be8b7a1",
+          "identical": true
+        },
+        "collect": {
+          "source_ast_sha256": "adaa30b66c09928bb01548cba19ea9943e08233d1c7e9bd1966f466f0a3b31d5",
+          "public_ast_sha256": "adaa30b66c09928bb01548cba19ea9943e08233d1c7e9bd1966f466f0a3b31d5",
+          "identical": true
+        },
+        "population_fit": {
+          "source_ast_sha256": "6c68a138fcb0817890ab5557fa96073e5a5c9d4e950ab1618c9a8a248976228f",
+          "public_ast_sha256": "6c68a138fcb0817890ab5557fa96073e5a5c9d4e950ab1618c9a8a248976228f",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "62e666803d17ff9f13f3f4de680e1df1a3fa1c457426055f0ac5ea72b4ece3a8",
+          "public_ast_sha256": "62e666803d17ff9f13f3f4de680e1df1a3fa1c457426055f0ac5ea72b4ece3a8",
+          "identical": true
+        },
+        "render_table": {
+          "source_ast_sha256": "6dab955303725ebc3fe798a0eeecbfd985ac551c7ddcf4796075b86fa3701a32",
+          "public_ast_sha256": "6dab955303725ebc3fe798a0eeecbfd985ac551c7ddcf4796075b86fa3701a32",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/run_2013_twin_family_signal_revision.py",
+      "public": "analysis_sources/run_2013_twin_family_signal_revision.py",
+      "source_sha256": "9b669f36675d331fa88cbe935f779d9da8055ea6cde26106eebfd6c506436e9d",
+      "public_sha256": "8285901954b671f5569be6ecb34a07e63a0f429799c90e55c32349c7eb419445",
+      "local_imports": [],
+      "substitutions": [
+        {
+          "line": 345,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == '__main__':\n    main()",
+          "original_sha256": "00a517e255da161aa6eb4d1d8a0258ce40de4966263c2aedcb2dbe65e6805b4e",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "nonconstant": {
+          "source_ast_sha256": "2c6a35bff28ee22631edc36cb72857eeaf0098e4cb73bbe51f4d02dfd5c857e0",
+          "public_ast_sha256": "2c6a35bff28ee22631edc36cb72857eeaf0098e4cb73bbe51f4d02dfd5c857e0",
+          "identical": true
+        },
+        "estimate_record": {
+          "source_ast_sha256": "4c86b9f29e668709d29585203fccf38a92a0d9c87bcb8f9fe4aa113af2e8ee96",
+          "public_ast_sha256": "4c86b9f29e668709d29585203fccf38a92a0d9c87bcb8f9fe4aa113af2e8ee96",
+          "identical": true
+        },
+        "score_models": {
+          "source_ast_sha256": "23fa06c8dd90441a4acdd7128b64bd59fe3129593dd5e88ef59599c66654017b",
+          "public_ast_sha256": "23fa06c8dd90441a4acdd7128b64bd59fe3129593dd5e88ef59599c66654017b",
+          "identical": true
+        },
+        "binary_models": {
+          "source_ast_sha256": "c98b08d30001027203bf568680b9fcd2357be53b9cf87de2a20bb72d509978ed",
+          "public_ast_sha256": "c98b08d30001027203bf568680b9fcd2357be53b9cf87de2a20bb72d509978ed",
+          "identical": true
+        },
+        "paired_arrays": {
+          "source_ast_sha256": "83424c5a225ee115a0afb6e9591d205b438234eb0d89f5e34bc1d9bf7e250574",
+          "public_ast_sha256": "83424c5a225ee115a0afb6e9591d205b438234eb0d89f5e34bc1d9bf7e250574",
+          "identical": true
+        },
+        "moments": {
+          "source_ast_sha256": "8919588679956d89bda42c8caf750d57ae096378a4ec74763126a8e1cdf8bd7f",
+          "public_ast_sha256": "8919588679956d89bda42c8caf750d57ae096378a4ec74763126a8e1cdf8bd7f",
+          "identical": true
+        },
+        "components": {
+          "source_ast_sha256": "8d6c1702c870f8475658c403bae34a4fe54273928246ed2bfc8012e7f0c3706a",
+          "public_ast_sha256": "8d6c1702c870f8475658c403bae34a4fe54273928246ed2bfc8012e7f0c3706a",
+          "identical": true
+        },
+        "objective": {
+          "source_ast_sha256": "63a6fca5a7e70475ba0449b2d96556fe4e3df05fc1e68d2bbb4a7cabfd279941",
+          "public_ast_sha256": "63a6fca5a7e70475ba0449b2d96556fe4e3df05fc1e68d2bbb4a7cabfd279941",
+          "identical": true
+        },
+        "fit_covariance": {
+          "source_ast_sha256": "91e38fcacfd71662a3fab44b622aedf57f585bba52bf20a2b0bd9aabe5441fa6",
+          "public_ast_sha256": "91e38fcacfd71662a3fab44b622aedf57f585bba52bf20a2b0bd9aabe5441fa6",
+          "identical": true
+        },
+        "resample_pairs": {
+          "source_ast_sha256": "c6e5e6ab434422f7f513b7ccd5658de612a63907199c066d626c90a1ab1353f9",
+          "public_ast_sha256": "c6e5e6ab434422f7f513b7ccd5658de612a63907199c066d626c90a1ab1353f9",
+          "identical": true
+        },
+        "bootstrap_one": {
+          "source_ast_sha256": "313d3d32678566ab1f37c55f8f551d00dc8c5a53e665bc6baebba22055cb375a",
+          "public_ast_sha256": "313d3d32678566ab1f37c55f8f551d00dc8c5a53e665bc6baebba22055cb375a",
+          "identical": true
+        },
+        "self_test": {
+          "source_ast_sha256": "42b5dfde5f085a99182188eef99d801b8cd939a25c5f2340c5e42df4c2024a21",
+          "public_ast_sha256": "42b5dfde5f085a99182188eef99d801b8cd939a25c5f2340c5e42df4c2024a21",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "79def9a440f0edb79744ed85689910094f14f05f77c85900f728ae5bf5a75701",
+          "public_ast_sha256": "79def9a440f0edb79744ed85689910094f14f05f77c85900f728ae5bf5a75701",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/build_2013_coauthor_review_artifacts.py",
+      "public": "analysis_sources/build_2013_coauthor_review_artifacts.py",
+      "source_sha256": "713e4a789195ba06d21eb190a1a7c16ebfddad4d35201a639127a20ee3e33f61",
+      "public_sha256": "4408c249c7cf5a946de70251dbd041a24827a00e73619787a05283eba1a47f43",
+      "local_imports": [
+        "run_2013_initial_microbiome_signal_probes",
+        "run_2013_method_strengthening_batch"
+      ],
+      "substitutions": [
+        {
+          "line": 32,
+          "reason": "portable module-level path default",
+          "original": "PROJECT_ROOT = Path(\"research_projects/dry_eye_gut_microbiome_scoping_2026\")",
+          "original_sha256": "fbbc72b062ff99029eb21eea647003c2d4ba179d736a6c58bb43ca1da76bdeb3",
+          "replacement": "PROJECT_ROOT = Path(__file__).resolve().parents[1]"
+        },
+        {
+          "line": 33,
+          "reason": "portable module-level path default",
+          "original": "REPRODUCTION_COMMANDS = Path(\"docs/research/active/dry_eye_gut_microbiome_scoping_2026/COAUTHOR_REVIEW_REPRODUCTION_COMMANDS_2026-08-14.md\")",
+          "original_sha256": "89e47a9dd3dd6eee7aca67543fa961331bc4b4c85a6c41d4cf53ec006adc67e0",
+          "replacement": "REPRODUCTION_COMMANDS = Path(__file__).resolve().parents[1] / 'runtime' / 'documentation' / 'COAUTHOR_REVIEW_REPRODUCTION_COMMANDS_2026-08-14.md'"
+        },
+        {
+          "line": 34,
+          "reason": "portable module-level path default",
+          "original": "DEFAULT_PRODUCTION_DIR = PROJECT_ROOT / \"outputs\" / \"coauthor_review_production_2026_08_14\"",
+          "original_sha256": "ed885c9a74596ffea2ccfd69a2993c24920edb51885b01bd938f5f0b3e20da2e",
+          "replacement": "DEFAULT_PRODUCTION_DIR = PROJECT_ROOT / 'runtime' / 'coauthor_review_production_2026_08_14'"
+        },
+        {
+          "line": 518,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "write_table": {
+          "source_ast_sha256": "edb3e87c248a66bc5fbf9113f001b4169e9783a3d202c432697ccb66eb5273b9",
+          "public_ast_sha256": "edb3e87c248a66bc5fbf9113f001b4169e9783a3d202c432697ccb66eb5273b9",
+          "identical": true
+        },
+        "latex_escape": {
+          "source_ast_sha256": "7d022481a19a36bf6af8296ceddadf6a09c77df1d00aefba8fbacd376e7a6d2e",
+          "public_ast_sha256": "7d022481a19a36bf6af8296ceddadf6a09c77df1d00aefba8fbacd376e7a6d2e",
+          "identical": true
+        },
+        "write_latex_tabular": {
+          "source_ast_sha256": "47cc08b66772a0f94e15c0da981bab4259fb78ed6ccf646d6925412d2027b1bf",
+          "public_ast_sha256": "47cc08b66772a0f94e15c0da981bab4259fb78ed6ccf646d6925412d2027b1bf",
+          "identical": true
+        },
+        "format_p": {
+          "source_ast_sha256": "cf7483919b90126a5f0f7a9175fccd7c51be8f6d3926505314aa4f285662dd33",
+          "public_ast_sha256": "cf7483919b90126a5f0f7a9175fccd7c51be8f6d3926505314aa4f285662dd33",
+          "identical": true
+        },
+        "mean_sd": {
+          "source_ast_sha256": "8640eb61e2eddeb515ee066ab7deaf1b59583d03281ae79698bea29fdb8b87f6",
+          "public_ast_sha256": "8640eb61e2eddeb515ee066ab7deaf1b59583d03281ae79698bea29fdb8b87f6",
+          "identical": true
+        },
+        "median_iqr": {
+          "source_ast_sha256": "77bee8bc1c8dce7db83d3641816c71aed9b9ee8da54ccf7346abaf8185cf854c",
+          "public_ast_sha256": "77bee8bc1c8dce7db83d3641816c71aed9b9ee8da54ccf7346abaf8185cf854c",
+          "identical": true
+        },
+        "n_percent": {
+          "source_ast_sha256": "383f5782544e9c5d5a9e2cb451691275531f0bdfb692c8e16d64fbdd0d8a2c51",
+          "public_ast_sha256": "383f5782544e9c5d5a9e2cb451691275531f0bdfb692c8e16d64fbdd0d8a2c51",
+          "identical": true
+        },
+        "sha256": {
+          "source_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "public_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "identical": true
+        },
+        "git_value": {
+          "source_ast_sha256": "83eb128a9c5d93d99a5b310a2ffadfb456b201ca6267e47d9e3e32eb4b643d8f",
+          "public_ast_sha256": "83eb128a9c5d93d99a5b310a2ffadfb456b201ca6267e47d9e3e32eb4b643d8f",
+          "identical": true
+        },
+        "build_analysis_data": {
+          "source_ast_sha256": "31f7d19bcb2c87d62fae49da4bbc478df85b0422b219c9ce9b40a406a3e41abe",
+          "public_ast_sha256": "31f7d19bcb2c87d62fae49da4bbc478df85b0422b219c9ce9b40a406a3e41abe",
+          "identical": true
+        },
+        "build_flow": {
+          "source_ast_sha256": "9da30fc571ff2a9e85c08a58eb509e5ea008ceb15d653abeeb4e4630ff0cd93d",
+          "public_ast_sha256": "9da30fc571ff2a9e85c08a58eb509e5ea008ceb15d653abeeb4e4630ff0cd93d",
+          "identical": true
+        },
+        "build_table1": {
+          "source_ast_sha256": "f40a2f5bee2b37d1dafd65ad0986c63d1ba7c1d8b375cc743a46ef58137e4ad7",
+          "public_ast_sha256": "f40a2f5bee2b37d1dafd65ad0986c63d1ba7c1d8b375cc743a46ef58137e4ad7",
+          "identical": true
+        },
+        "build_missingness": {
+          "source_ast_sha256": "0eccceca1aeb8adff62b8e1cce06d646bad620d8d9694299d5f2c03221b159df",
+          "public_ast_sha256": "0eccceca1aeb8adff62b8e1cce06d646bad620d8d9694299d5f2c03221b159df",
+          "identical": true
+        },
+        "build_alpha_table": {
+          "source_ast_sha256": "e156fdd38f06f3cf4d849ac8264df55326de1a2564b2c241911bda3785e2511b",
+          "public_ast_sha256": "e156fdd38f06f3cf4d849ac8264df55326de1a2564b2c241911bda3785e2511b",
+          "identical": true
+        },
+        "build_sensitivity_table": {
+          "source_ast_sha256": "9f540ff0efded6dacf4b6711632ad3ce58d2fcbbb18b08d5187e2fee4342e578",
+          "public_ast_sha256": "9f540ff0efded6dacf4b6711632ad3ce58d2fcbbb18b08d5187e2fee4342e578",
+          "identical": true
+        },
+        "build_tie_sensitivity_table": {
+          "source_ast_sha256": "7af1832ad9b3cfc37b9224218e9cff4eb41245c44cd82b03117df3a0e99c80c6",
+          "public_ast_sha256": "7af1832ad9b3cfc37b9224218e9cff4eb41245c44cd82b03117df3a0e99c80c6",
+          "identical": true
+        },
+        "build_traceability_table": {
+          "source_ast_sha256": "62ad556aef024a944de869bd8a3f1d224a92d0f197ec6fe6bf037803d5d7fd30",
+          "public_ast_sha256": "62ad556aef024a944de869bd8a3f1d224a92d0f197ec6fe6bf037803d5d7fd30",
+          "identical": true
+        },
+        "build_forest_plot": {
+          "source_ast_sha256": "c9a6afb33f7b59ae8ca02623c34d359eb450d8fb5c42f707072060adaaf6c38e",
+          "public_ast_sha256": "c9a6afb33f7b59ae8ca02623c34d359eb450d8fb5c42f707072060adaaf6c38e",
+          "identical": true
+        },
+        "build_provenance": {
+          "source_ast_sha256": "a8cdb9a9721c449134777a80d75fd940b2b782628ac24a731bcdc733cc3f9c0d",
+          "public_ast_sha256": "a8cdb9a9721c449134777a80d75fd940b2b782628ac24a731bcdc733cc3f9c0d",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "386283729a4ad72383df25be026c03fa2b04a3fcfeed8c2f951099ab97315e4c",
+          "public_ast_sha256": "386283729a4ad72383df25be026c03fa2b04a3fcfeed8c2f951099ab97315e4c",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/run_2013_sparse_tail_pooling_followup.py",
+      "public": "analysis_sources/run_2013_sparse_tail_pooling_followup.py",
+      "source_sha256": "bfce48154e8e1997fbb0410332523993ff975f193d420ac000808252160afc39",
+      "public_sha256": "c3629f973ef53510ae2efac73978b7bc69a192188ae439866292ab4b1532501b",
+      "local_imports": [
+        "run_2013_locked_primary_16s_analysis",
+        "run_2013_symptom_dose_response"
+      ],
+      "substitutions": [
+        {
+          "line": 26,
+          "reason": "portable module-level path default",
+          "original": "DEFAULT_OUT_DIR = (\n    PROJECT_ROOT / \"outputs\" / \"sparse_tail_pooling_followup_2026_08_24\"\n)",
+          "original_sha256": "90392ea80aa0bc5ea0fbde034cf107fd1907ec1a9d3ef905e473ff22dd9d1550",
+          "replacement": "DEFAULT_OUT_DIR = PROJECT_ROOT / 'runtime' / 'sparse_tail_pooling_followup_2026_08_24'"
+        },
+        {
+          "line": 29,
+          "reason": "portable module-level path default",
+          "original": "PRIOR_CATEGORY_RESULTS = (\n    PROJECT_ROOT\n    / \"outputs\"\n    / \"symptom_dose_response_2026_08_24\"\n    / \"strict_control_category_models.csv\"\n)",
+          "original_sha256": "e30086285237a5e8a746044a923f17bb0b24eeefdbdfacd44cdea5970e003cb8",
+          "replacement": "PRIOR_CATEGORY_RESULTS = PROJECT_ROOT / 'runtime' / 'symptom_dose_response_2026_08_24' / 'strict_control_category_models.csv'"
+        },
+        {
+          "line": 231,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "fit_contrast": {
+          "source_ast_sha256": "11f92115dd16dcdee35bd02ab6b9a4ec56e54173649dbd2623da9a8b557c2be6",
+          "public_ast_sha256": "11f92115dd16dcdee35bd02ab6b9a4ec56e54173649dbd2623da9a8b557c2be6",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "288dcfae196a13611eabde81f29d2d950b2167f354bc562f60d7cbac7dc9d61a",
+          "public_ast_sha256": "288dcfae196a13611eabde81f29d2d950b2167f354bc562f60d7cbac7dc9d61a",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/run_whs_ded_richness_sensitivity.py",
+      "public": "analysis_sources/run_whs_ded_richness_sensitivity.py",
+      "source_sha256": "7d46239d95234440e09aebdf082a3bd9b2b190cf8683b9c9cc51f844c85f4c27",
+      "public_sha256": "3800448ca009971021ffca6717caa97fe7b383736535d531225031a543518d8b",
+      "local_imports": [
+        "run_2013_initial_microbiome_signal_probes",
+        "run_2013_locked_primary_16s_analysis",
+        "run_2013_symptom_dose_response"
+      ],
+      "substitutions": [
+        {
+          "line": 32,
+          "reason": "portable module-level path default",
+          "original": "SPECIFICATION = Path(\n    \"docs/research/active/dry_eye_gut_microbiome_scoping_2026/\"\n    \"WHS_DED_SENSITIVITY_SPECIFICATION_2026-08-24.md\"\n)",
+          "original_sha256": "599fff0fee50f62881e254d2d2104faf4546306a63e0476831a3527a3dfd1a7a",
+          "replacement": "SPECIFICATION = Path(__file__).resolve().parents[1] / 'runtime' / 'documentation' / 'WHS_DED_SENSITIVITY_SPECIFICATION_2026-08-24.md'"
+        },
+        {
+          "line": 36,
+          "reason": "portable module-level path default",
+          "original": "DOSE_RESULT = (\n    PROJECT_ROOT\n    / \"outputs\"\n    / \"symptom_dose_response_2026_08_24\"\n    / \"ordered_trend_model.json\"\n)",
+          "original_sha256": "cada92f24410351fd913de99ad3df496f0125d60a369cfb1d8170da2b2912c30",
+          "replacement": "DOSE_RESULT = PROJECT_ROOT / 'runtime' / 'symptom_dose_response_2026_08_24' / 'ordered_trend_model.json'"
+        },
+        {
+          "line": 42,
+          "reason": "portable module-level path default",
+          "original": "DEFAULT_OUT_DIR = PROJECT_ROOT / \"outputs\" / \"whs_ded_sensitivity_2026_08_24\"",
+          "original_sha256": "3b033b405c411b1f504e3ffbdc5c6fb63bdf53ded8e4f69e31340096af0be46a",
+          "replacement": "DEFAULT_OUT_DIR = PROJECT_ROOT / 'runtime' / 'whs_ded_sensitivity_2026_08_24'"
+        },
+        {
+          "line": 253,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "sha256": {
+          "source_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "public_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "identical": true
+        },
+        "write_json": {
+          "source_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "public_ast_sha256": "ce4485fef2694d270d209a266339432019c98bdfdd43d858424a1263fe0e1fd3",
+          "identical": true
+        },
+        "git_value": {
+          "source_ast_sha256": "83eb128a9c5d93d99a5b310a2ffadfb456b201ca6267e47d9e3e32eb4b643d8f",
+          "public_ast_sha256": "83eb128a9c5d93d99a5b310a2ffadfb456b201ca6267e47d9e3e32eb4b643d8f",
+          "identical": true
+        },
+        "verify_source_definition": {
+          "source_ast_sha256": "9b0647420d441e8823273a8e5200fadcf538a697f436098a7c520cc1319dc544",
+          "public_ast_sha256": "9b0647420d441e8823273a8e5200fadcf538a697f436098a7c520cc1319dc544",
+          "identical": true
+        },
+        "alpha_eight_sensitivity": {
+          "source_ast_sha256": "9048c1a15e9f27e51d79f512455b5e4aea2517f7018770e52f2d25b0ffd64668",
+          "public_ast_sha256": "9048c1a15e9f27e51d79f512455b5e4aea2517f7018770e52f2d25b0ffd64668",
+          "identical": true
+        },
+        "input_provenance": {
+          "source_ast_sha256": "0bc147dc3473a4553f60224cb95f0599b0f29f0c125d24fc0c2a02ab01408257",
+          "public_ast_sha256": "0bc147dc3473a4553f60224cb95f0599b0f29f0c125d24fc0c2a02ab01408257",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "a8170af61beafeb7389198fcefd3e8d5e9ea6d8d52f1d519b7c576799c9f98bd",
+          "public_ast_sha256": "a8170af61beafeb7389198fcefd3e8d5e9ea6d8d52f1d519b7c576799c9f98bd",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/build_2013_detection_threshold_active_scope.py",
+      "public": "analysis_sources/build_2013_detection_threshold_active_scope.py",
+      "source_sha256": "5537e0395189922aae4b1ad24b3f57c98f841e3b436138fed42bea0924976702",
+      "public_sha256": "6c381a49b33c2aec3da329a1bf9671db6f9d867489da3bcbe4061e217ff86fbf",
+      "local_imports": [
+        "run_2013_initial_microbiome_signal_probes"
+      ],
+      "substitutions": [
+        {
+          "line": 25,
+          "reason": "portable module-level path default",
+          "original": "DEFAULT_OUTPUT_DIR = (\n    PROJECT_ROOT / \"outputs\" / \"microbiome_pipeline_gap_analysis_2026_08_25\"\n)",
+          "original_sha256": "6ebdfd79d325c44435e7284dec0be543e71e912904870f590a1c03218a80a31e",
+          "replacement": "DEFAULT_OUTPUT_DIR = PROJECT_ROOT / 'runtime' / 'microbiome_pipeline_gap_analysis_2026_08_25'"
+        },
+        {
+          "line": 167,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "sha256": {
+          "source_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "public_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "e057ee67c96380f51f04f03fb826395a4a34c32a29c717071e02a2cda08dd43c",
+          "public_ast_sha256": "e057ee67c96380f51f04f03fb826395a4a34c32a29c717071e02a2cda08dd43c",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/prepare_2013_twin_family_signal_revision.py",
+      "public": "analysis_sources/prepare_2013_twin_family_signal_revision.py",
+      "source_sha256": "b428dfc3d6cebb185782ab41e97ef388500c891db13f0c98734b120889aed4a7",
+      "public_sha256": "a70b5a405a7bf34ef3e3ced7d999481cce1919a66601886b0a9a5e9a9783b37a",
+      "local_imports": [
+        "run_2013_twin_relatedness_extension"
+      ],
+      "substitutions": [
+        {
+          "line": 43,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == '__main__':\n    main()",
+          "original_sha256": "00a517e255da161aa6eb4d1d8a0258ce40de4966263c2aedcb2dbe65e6805b4e",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "main": {
+          "source_ast_sha256": "5ef830eaed16be39748f23dbd9362ee300b8e55d55dc4c85daf113981d1dd78c",
+          "public_ast_sha256": "5ef830eaed16be39748f23dbd9362ee300b8e55d55dc4c85daf113981d1dd78c",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/build_2013_lean_story_figure.py",
+      "public": "analysis_sources/build_2013_lean_story_figure.py",
+      "source_sha256": "bbd5c6ebf91d4ffd2655a7ae07a21630706c1aa52195496d540f0e3d2764e3d8",
+      "public_sha256": "c73f4f579dac63b71ae04168dbc62a5adb1140ebb43e9dbd55fd9b609440cd4d",
+      "local_imports": [],
+      "substitutions": [
+        {
+          "line": 18,
+          "reason": "portable module-level path default",
+          "original": "DEFAULT_OUT_DIR = PROJECT_ROOT / \"outputs\" / \"manuscript_figures_2026_08_29\"",
+          "original_sha256": "e5df8099efed9924ed18c1d2269ccd58c571a37c68b75117c158431b5cf9a0cc",
+          "replacement": "DEFAULT_OUT_DIR = PROJECT_ROOT / 'runtime' / 'manuscript_figures_2026_08_29'"
+        },
+        {
+          "line": 19,
+          "reason": "portable module-level path default",
+          "original": "ALPHA_RESULTS = (\n    PROJECT_ROOT\n    / \"outputs\"\n    / \"coauthor_review_production_2026_08_14\"\n    / \"primary\"\n    / \"locked_primary_16s_association_matrix.csv\"\n)",
+          "original_sha256": "3aa2895976f74c49bb4e5cd1127e85e01e6653e0c10512eaf0b52c5700a5f284",
+          "replacement": "ALPHA_RESULTS = PROJECT_ROOT / 'runtime' / 'coauthor_review_production_2026_08_14' / 'primary' / 'locked_primary_16s_association_matrix.csv'"
+        },
+        {
+          "line": 161,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "sha256": {
+          "source_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "public_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "5964d7b6531121ca9ef3f1b891c2d5b899fc8c806f458d0b70f5c5a3c9245e60",
+          "public_ast_sha256": "5964d7b6531121ca9ef3f1b891c2d5b899fc8c806f458d0b70f5c5a3c9245e60",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/build_2013_publishability_manuscript.py",
+      "public": "analysis_sources/build_2013_publishability_manuscript.py",
+      "source_sha256": "084ab98f1b3ff1238bb7d255d5758d57c8e907b5ea596fde3bf3428ade22a0f9",
+      "public_sha256": "ba099e21f1d4770a880ccb9acdea3d0aa44a14ab3a3944ac067f159a95caf32b",
+      "local_imports": [
+        "article_evidence_anchors"
+      ],
+      "substitutions": [
+        {
+          "line": 17,
+          "reason": "portable module-level path default",
+          "original": "PRODUCTION = PROJECT_ROOT / \"outputs\" / \"coauthor_review_production_2026_08_14\"",
+          "original_sha256": "7d229c38639b23327cb236192032bcb24f5ccc91f2228175b103ee8415483b49",
+          "replacement": "PRODUCTION = PROJECT_ROOT / 'runtime' / 'coauthor_review_production_2026_08_14'"
+        },
+        {
+          "line": 18,
+          "reason": "portable module-level path default",
+          "original": "AUDIT = PROJECT_ROOT / \"outputs\" / \"publishability_audit_2026_08_21\"",
+          "original_sha256": "69ea2225cfc66191b186ad62830effac9a36f057ef74ec136e71a53619baa169",
+          "replacement": "AUDIT = PROJECT_ROOT / 'runtime' / 'publishability_audit_2026_08_21'"
+        },
+        {
+          "line": 19,
+          "reason": "portable module-level path default",
+          "original": "PACKAGE = PROJECT_ROOT / \"manuscript\" / \"full_publishability_package_2026-08-21\"",
+          "original_sha256": "9ffc3e176e51d12f45e84c87d1f5f1326ef9c73e3f638e220a047445f5fa11ea",
+          "replacement": "PACKAGE = Path(__file__).resolve().parents[1] / 'runtime' / 'manuscript_assets'"
+        },
+        {
+          "line": 21,
+          "reason": "portable module-level path default",
+          "original": "MANUSCRIPT_FIGURES = PROJECT_ROOT / \"outputs\" / \"manuscript_figures_2026_08_29\"",
+          "original_sha256": "aefcb517073895bcf2e065eb537e658f88f05ab7ce5031977da1bb55e42b3148",
+          "replacement": "MANUSCRIPT_FIGURES = PROJECT_ROOT / 'runtime' / 'manuscript_figures_2026_08_29'"
+        },
+        {
+          "line": 22,
+          "reason": "portable module-level path default",
+          "original": "DOSE_RESPONSE = PROJECT_ROOT / \"outputs\" / \"symptom_dose_response_2026_08_24\"",
+          "original_sha256": "f4896b8da626082fc3e6b3d1af56a0feefbcf4f3c10cfe00cc603d7d89aa9346",
+          "replacement": "DOSE_RESPONSE = PROJECT_ROOT / 'runtime' / 'symptom_dose_response_2026_08_24'"
+        },
+        {
+          "line": 23,
+          "reason": "portable module-level path default",
+          "original": "WHS_SENSITIVITY = PROJECT_ROOT / \"outputs\" / \"whs_ded_sensitivity_2026_08_24\"",
+          "original_sha256": "aeb1e9593f7c919a994ef5e641fbbc636dfc829ef3c7f90762bba55f8447e2cd",
+          "replacement": "WHS_SENSITIVITY = PROJECT_ROOT / 'runtime' / 'whs_ded_sensitivity_2026_08_24'"
+        },
+        {
+          "line": 24,
+          "reason": "portable module-level path default",
+          "original": "MICROBIOME_GAP = PROJECT_ROOT / \"outputs\" / \"microbiome_pipeline_gap_analysis_2026_08_25\"",
+          "original_sha256": "344e210356229bc9e442f1dfaaf9fb623388c34584444ab61e2a51216111e176",
+          "replacement": "MICROBIOME_GAP = PROJECT_ROOT / 'runtime' / 'microbiome_pipeline_gap_analysis_2026_08_25'"
+        },
+        {
+          "line": 25,
+          "reason": "portable module-level path default",
+          "original": "TWIN_EXTENSION = PROJECT_ROOT / \"outputs\" / \"twin_relatedness_extension_2026_08_28\"",
+          "original_sha256": "3a0f11ef524c5376bb9feb21db21bac217606bae6d7d4edc517f3dbda2460582",
+          "replacement": "TWIN_EXTENSION = PROJECT_ROOT / 'runtime' / 'twin_relatedness_extension_2026_08_28'"
+        },
+        {
+          "line": 26,
+          "reason": "portable module-level path default",
+          "original": "ANTIBIOTIC_AUDIT = PROJECT_ROOT / \"outputs\" / \"antibiotic_metadata_assumption_2026_08_24\"",
+          "original_sha256": "d9c23b5f3a0abfffb95eb8a68458ec0a0f3a47f14853a1a9bf96eae8f83ab860",
+          "replacement": "ANTIBIOTIC_AUDIT = PROJECT_ROOT / 'runtime' / 'antibiotic_metadata_assumption_2026_08_24'"
+        },
+        {
+          "line": 27,
+          "reason": "portable module-level path default",
+          "original": "ANCOM_CORRECTION = PROJECT_ROOT / \"outputs\" / \"ancombc2_2013_corrected_2026_09_01\"",
+          "original_sha256": "191451636feb0f398e80c74f938b843850b23f200e21ba2bf264f81bde6d9cb6",
+          "replacement": "ANCOM_CORRECTION = PROJECT_ROOT / 'runtime' / 'ancombc2_2013_corrected_2026_09_01'"
+        },
+        {
+          "line": 812,
+          "reason": "disable original standalone execution",
+          "original": "if __name__ == \"__main__\":\n    raise SystemExit(main())",
+          "original_sha256": "0d9048239b79d1a38bd3997865c321d7abc7dcf6708cf2036f21be8a2039d93a",
+          "replacement": "# Original standalone launch disabled. Use the public workflow entry point."
+        }
+      ],
+      "functions": {
+        "sha256": {
+          "source_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "public_ast_sha256": "2622cf76a7b09f0a4fda453c373a798f17c31825273ab816a9d5bee2086aa35c",
+          "identical": true
+        },
+        "tex_escape": {
+          "source_ast_sha256": "15e7aad235d1e5c2790539218076c5ca948db28631d702d1a3127de991ad0208",
+          "public_ast_sha256": "15e7aad235d1e5c2790539218076c5ca948db28631d702d1a3127de991ad0208",
+          "identical": true
+        },
+        "write_table": {
+          "source_ast_sha256": "39042faf27de1b29ad9021ccfa3ae06551b33a150b009d0176551ff8ec10a0f2",
+          "public_ast_sha256": "39042faf27de1b29ad9021ccfa3ae06551b33a150b009d0176551ff8ec10a0f2",
+          "identical": true
+        },
+        "fmt_effect": {
+          "source_ast_sha256": "01996d053923cc3762266967009e3f095f0cd97eabed9213e07fdef05ea69c07",
+          "public_ast_sha256": "01996d053923cc3762266967009e3f095f0cd97eabed9213e07fdef05ea69c07",
+          "identical": true
+        },
+        "fmt_p": {
+          "source_ast_sha256": "614cc2b396cd39ea96144ccfb5e2fd1da94638837d4134eba326f55d1fbb2ee8",
+          "public_ast_sha256": "614cc2b396cd39ea96144ccfb5e2fd1da94638837d4134eba326f55d1fbb2ee8",
+          "identical": true
+        },
+        "readable_taxon": {
+          "source_ast_sha256": "80160bdb62fbf2e09b99913e7b9ba9e1a3616df367131a4868108a28ef289398",
+          "public_ast_sha256": "80160bdb62fbf2e09b99913e7b9ba9e1a3616df367131a4868108a28ef289398",
+          "identical": true
+        },
+        "genus_direction": {
+          "source_ast_sha256": "901b49a1c72840c6ce467f4d56ceb2e6bce432a01bb8e87f343083227ecd8af6",
+          "public_ast_sha256": "901b49a1c72840c6ce467f4d56ceb2e6bce432a01bb8e87f343083227ecd8af6",
+          "identical": true
+        },
+        "main": {
+          "source_ast_sha256": "813d44c8fb2e719fc8989075baa67c71bafedb7d4fb297d99a048e7bebe683a0",
+          "public_ast_sha256": "813d44c8fb2e719fc8989075baa67c71bafedb7d4fb297d99a048e7bebe683a0",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/article_evidence_anchors.py",
+      "public": "analysis_sources/article_evidence_anchors.py",
+      "source_sha256": "ed7e6f3fc2183b1d7aa6f6ae8650ea2783286a1fd86ffd0c28db22e0e5080e40",
+      "public_sha256": "ed7e6f3fc2183b1d7aa6f6ae8650ea2783286a1fd86ffd0c28db22e0e5080e40",
+      "local_imports": [],
+      "substitutions": [],
+      "functions": {
+        "anchor_generated_table_text": {
+          "source_ast_sha256": "94a778d9c0a33d436877d203fddde568efafeb86c30fb139b5e89740cfac8ad0",
+          "public_ast_sha256": "94a778d9c0a33d436877d203fddde568efafeb86c30fb139b5e89740cfac8ad0",
+          "identical": true
+        },
+        "anchor_generated_tables": {
+          "source_ast_sha256": "8e2be0832dc44b57e12a44e97a0bf6af377c18a20c9798a238d56d6db2466c3c",
+          "public_ast_sha256": "8e2be0832dc44b57e12a44e97a0bf6af377c18a20c9798a238d56d6db2466c3c",
+          "identical": true
+        }
+      },
+      "standalone_main": "disabled; function remains available for source inspection"
+    },
+    {
+      "source": "scripts/run_2013_ancombc2_analysis.R",
+      "public": "r/run_2013_ancombc2_analysis.R",
+      "source_sha256": "08943010bdab76798e59208b1df1bf9ee47339f44c7c7e3439a647ceb3b0f380",
+      "public_sha256": "9456d1c961b501beda86128f3ae0861e533794aa17dff96ea154a26c8e5fd7ac",
+      "substitutions": [
+        {
+          "reason": "portable input/output default",
+          "original": "input_dir = \"research_projects/dry_eye_gut_microbiome_scoping_2026/outputs/ancombc2_2013_inputs\"",
+          "replacement": "input_dir = \"authorized_inputs/genus\""
+        },
+        {
+          "reason": "portable input/output default",
+          "original": "output_dir = \"research_projects/dry_eye_gut_microbiome_scoping_2026/outputs/ancombc2_2013_results\"",
+          "replacement": "output_dir = \"runtime/run_2013_ancombc2_analysis\""
+        },
+        {
+          "reason": "guard standalone launcher when sourced",
+          "original": "main()",
+          "replacement": "if (sys.nframe() == 0L) main()"
+        }
+      ],
+      "numerical_function_bodies": "unchanged; parse_args input/output defaults adapted",
+      "standalone_main": "Rscript command only; sourcing defines functions without running analyses"
+    },
+    {
+      "source": "scripts/run_2013_formal_microbiome_package_sensitivity.R",
+      "public": "r/run_2013_formal_microbiome_package_sensitivity.R",
+      "source_sha256": "8b0a01692ec33a66c435fbaf3f9ca96001d16c1f69e5680313700e6db15d4ac2",
+      "public_sha256": "f94da3c01193e72cb9bf544dbbf67dd1a5c3daa636123067287c9910ed763284",
+      "substitutions": [
+        {
+          "reason": "portable input/output default",
+          "original": "input_dir = \"research_projects/dry_eye_gut_microbiome_scoping_2026/outputs/ancombc2_2013_inputs_fixed_genus_universe\"",
+          "replacement": "input_dir = \"authorized_inputs/genus\""
+        },
+        {
+          "reason": "portable input/output default",
+          "original": "output_dir = \"research_projects/dry_eye_gut_microbiome_scoping_2026/outputs/formal_microbiome_package_sensitivity_2013_2026_06_29\"",
+          "replacement": "output_dir = \"runtime/run_2013_formal_microbiome_package_sensitivity\""
+        },
+        {
+          "reason": "guard standalone launcher when sourced",
+          "original": "quit(status = main(), save = \"no\")",
+          "replacement": "if (sys.nframe() == 0L) quit(status = main(), save = \"no\")"
+        }
+      ],
+      "numerical_function_bodies": "unchanged; parse_args input/output defaults adapted",
+      "standalone_main": "Rscript command only; sourcing defines functions without running analyses"
+    }
+  ],
+  "excluded_entry_points": {
+    "run_2013_initial_microbiome_signal_probes.main": "Historical exploratory association and prediction batch.",
+    "run_2013_locked_primary_16s_analysis.main": "Historical multi-branch batch including prediction and candidate taxa.",
+    "run_2013_adjusted_probability_contrast.main": "Probability contrast removed from retained manuscript scope.",
+    "all_original_python_main_launchers": "Disabled; public workflow calls retained analyses explicitly.",
+    "build_v47_symptom_figure.py": "Top-level file I/O; final figure is rendered by the public package owner."
+  },
+  "runtime_constraints": [
+    "Article-specific shape and numerical assertions remain inside original functions; synthetic runners call numerical functions explicitly.",
+    "Original-data row-level genus/twin intermediate files require authorized private inputs and private output handling.",
+    "The formal R runner unconditionally loads maaslin3 even when its analysis is omitted; literal execution needs the recorded dependency.",
+    "Use explicit R input/output arguments; workers=1 avoids mirai worker startup."
+  ]
+}

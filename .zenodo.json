@@ -1,0 +1,12 @@
+{
+  "title": "TwinsUK dry-eye gut-microbiome analysis code",
+  "description": "Analysis implementations accompanying Lower gut microbiome richness is associated with more frequent dry eye symptoms: a twin study, manuscript version 49. Includes portable Python adapters, preserved Python and R source, synthetic example inputs, and aggregate reference results. Participant-level TwinsUK data require approved access. Independent assessment of the exploratory community-test assumptions remains pending; see the documented verification limits.",
+  "upload_type": "software",
+  "creators": [{"name": "Hynnekleiv, Leif"}],
+  "version": "1.0.0",
+  "publication_date": "2026-10-28",
+  "access_right": "open",
+  "license": "mit-license",
+  "keywords": ["dry eye", "gut microbiome", "microbial richness", "twins"],
+  "related_identifiers": [{"identifier": "https://github.com/Gloggglogg/twinsuk-dry-eye-gut-microbiome", "relation": "isSupplementTo", "scheme": "url"}]
+}

@@ -1,0 +1,11 @@
+{
+  "data_kind": "synthetic",
+  "seed": 20261028,
+  "participants": 600,
+  "families": 300,
+  "asv_features": 120,
+  "genus_features": 40,
+  "description": "Wholly artificial software fixture; every identifier starts SYN_.",
+  "source_study_data_used": false,
+  "scientific_interpretation": "Illustrates execution only; values are unrelated to study estimates."
+}

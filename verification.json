@@ -1,0 +1,49 @@
+{
+  "release_version": "1.0.0",
+  "manuscript_version": 49,
+  "status": "computational_checks_passed_with_documented_limits",
+  "source_functions_and_classes_preserved": 195,
+  "python_source_modules": 21,
+  "r_source_scripts": 2,
+  "aggregate_reference_coefficients": 159,
+  "aggregate_reference_models": 18,
+  "aggregate_genus_results": 1278,
+  "checks": {
+    "deterministic_source_export": "passed",
+    "all_python_source_imports": "passed: 21 modules",
+    "unchanged_python_function_and_class_syntax": "passed: 195 records",
+    "isolated_copy_unittest": "passed: 13 tests under Python isolated mode",
+    "synthetic_core_repeated_run": "passed: byte-identical repeated aggregate outputs",
+    "synthetic_default_cli": "passed: 600 participants, 300 families, 19 community permutations, zero twin bootstrap repetitions",
+    "input_and_private_output_guards": "passed",
+    "source_count_order_and_genus_alignment": "passed on artificial inputs",
+    "primary_and_eight_test_reporting": "passed",
+    "reference_aggregate_hashes": "passed: 11 artifacts and their source provenance",
+    "grouped_score_figure": "passed: byte-identical to the manuscript version 49 display, independently visually reviewed",
+    "r_parse_and_source": "passed for both scripts; local R 4.4.3 only",
+    "twin_algebra_self_tests": "passed: gradient, covariance recovery and twin-order invariance",
+    "public_prose_screen": "passed; complete affected text independently reviewed"
+  },
+  "tested_python_environment": {
+    "python": "3.11.4",
+    "numpy": "1.25.2",
+    "pandas": "2.0.3",
+    "scipy": "1.11.1",
+    "statsmodels": "0.14.2",
+    "matplotlib": "3.10.7",
+    "openpyxl": "3.0.10",
+    "scikit-learn": "1.6.1",
+    "pyreadr": "0.5.4"
+  },
+  "protected_study_inputs_used_for_release_testing": false,
+  "not_executed_for_this_release": [
+    "original protected-source preparation",
+    "independent refitting of participant-data results",
+    "native R model fitting",
+    "production 1999-permutation community jobs",
+    "production 499-repetition twin bootstrap"
+  ],
+  "statistical_assumption_assessment": "Custom community-test null distributions and family-exchange assumptions remain pending.",
+  "historical_feature_set_identity": "Both community branches recorded 142 genera. Exact set identity requires approved-data checking.",
+  "reader_review_guidance_sha256": "864e8dad94dff51ba99937ff309f37568ac4fa4d4cddad6c27bccf98db3a5180"
+}

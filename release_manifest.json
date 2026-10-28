@@ -1,0 +1,340 @@
+{
+  "version": "1.0.0",
+  "manuscript_version": 49,
+  "selection": "explicit root names and reviewed subdirectory extensions",
+  "excluded": [
+    "runtime",
+    "authorized_inputs",
+    "private",
+    "__pycache__",
+    ".git",
+    "internal review records"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 83,
+      "sha256": "6dc2613066af6be60c7ff7c902214a4e606720d06ed736072e40278bde52c8c1"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 112,
+      "sha256": "076207aab8a9c725ec9a00d6852d526eb42fa31ebfb0a2cd047483fc3491b752"
+    },
+    {
+      "path": ".zenodo.json",
+      "bytes": 962,
+      "sha256": "bdb0c9fd0fe66ac7c2150ae0b63b9d9cea6ae84ff58cbc6f72b733326d922ad4"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 471,
+      "sha256": "aee30a674e4dd2d58e0a3a6d08651ba7721bd364cd06e076338562ea3ee21c7b"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1072,
+      "sha256": "dc6cf7abb0b8d69f77c41c1fb7a4f9afc1ad1ebd06b1ca41d8a39b4e892b33c0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5762,
+      "sha256": "cecc054b6052af2bd154c6d4b7efb7fcc097d681235aa4bbf02d9c131f5801bb"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "bytes": 1095,
+      "sha256": "93feeba173043edb1aaec0c33978b3bd3e636866ebdb5f13ccaad5372ff5b031"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+    },
+    {
+      "path": "analysis_sources/__init__.py",
+      "bytes": 105,
+      "sha256": "2df5d4eeb3bab874475851013ea2c71164f984019ac00351f19f3e76d20d6ef8"
+    },
+    {
+      "path": "analysis_sources/article_evidence_anchors.py",
+      "bytes": 1969,
+      "sha256": "ed7e6f3fc2183b1d7aa6f6ae8650ea2783286a1fd86ffd0c28db22e0e5080e40"
+    },
+    {
+      "path": "analysis_sources/audit_2013_time_near_confounders.py",
+      "bytes": 20581,
+      "sha256": "e07e37085cce47e198ed02206145e4455e3cc3c7c326d8c055e0159dbe333f92"
+    },
+    {
+      "path": "analysis_sources/audit_antibiotic_metadata_assumption.py",
+      "bytes": 8677,
+      "sha256": "bd771986b96a6e387b14ab2999965b8864784b4f9e1bff1f2141fd69497c3d17"
+    },
+    {
+      "path": "analysis_sources/build_2013_ancombc2_inputs.py",
+      "bytes": 7754,
+      "sha256": "1daf5abd4a9a66f353967ca1cfc4c7c2da975b2a3a2fafb82878c7aaa8bcdbf2"
+    },
+    {
+      "path": "analysis_sources/build_2013_coauthor_review_artifacts.py",
+      "bytes": 24598,
+      "sha256": "4408c249c7cf5a946de70251dbd041a24827a00e73619787a05283eba1a47f43"
+    },
+    {
+      "path": "analysis_sources/build_2013_detection_threshold_active_scope.py",
+      "bytes": 6390,
+      "sha256": "6c381a49b33c2aec3da329a1bf9671db6f9d867489da3bcbe4061e217ff86fbf"
+    },
+    {
+      "path": "analysis_sources/build_2013_lean_story_figure.py",
+      "bytes": 5328,
+      "sha256": "c73f4f579dac63b71ae04168dbc62a5adb1140ebb43e9dbd55fd9b609440cd4d"
+    },
+    {
+      "path": "analysis_sources/build_2013_publishability_manuscript.py",
+      "bytes": 37121,
+      "sha256": "ba099e21f1d4770a880ccb9acdea3d0aa44a14ab3a3944ac067f159a95caf32b"
+    },
+    {
+      "path": "analysis_sources/export_v42_model_coefficients.py",
+      "bytes": 11389,
+      "sha256": "cd48e1cc027a62cebfb9d34f164c204a98ba9549169916ac6257283df9ed37d2"
+    },
+    {
+      "path": "analysis_sources/prepare_2013_twin_family_signal_revision.py",
+      "bytes": 2152,
+      "sha256": "a70b5a405a7bf34ef3e3ced7d999481cce1919a66601886b0a9a5e9a9783b37a"
+    },
+    {
+      "path": "analysis_sources/run_2013_adjusted_probability_contrast.py",
+      "bytes": 15478,
+      "sha256": "727c519294bc23e8233b0ef8925011cff3030bc83d1e9133d883cddfcfdbc5db"
+    },
+    {
+      "path": "analysis_sources/run_2013_initial_microbiome_signal_probes.py",
+      "bytes": 34838,
+      "sha256": "7536f8b7b10f19f496adb83f49416a2ef7877dd8e5a63a470b8f7ff131c897c4"
+    },
+    {
+      "path": "analysis_sources/run_2013_locked_primary_16s_analysis.py",
+      "bytes": 19647,
+      "sha256": "3e02e8a25c28a6ce76dd39793318af6de8771357b596f7415f3e50917a570e15"
+    },
+    {
+      "path": "analysis_sources/run_2013_method_strengthening_batch.py",
+      "bytes": 28757,
+      "sha256": "3e9869a6c5599d89eee0eb1806535f47ec49bd97d49a0d531216bed1449547b8"
+    },
+    {
+      "path": "analysis_sources/run_2013_microbiome_pipeline_gap_analysis.py",
+      "bytes": 34430,
+      "sha256": "1709966fe0f88f3e01b6b46a177561933e840102edd937d6df84c02b73fc34ea"
+    },
+    {
+      "path": "analysis_sources/run_2013_publishability_sensitivities.py",
+      "bytes": 26381,
+      "sha256": "e5c55fe95f52a3e0501bd8661bcdf1e16b62c048f2e6cb42c925112da2976fc2"
+    },
+    {
+      "path": "analysis_sources/run_2013_sparse_tail_pooling_followup.py",
+      "bytes": 8155,
+      "sha256": "c3629f973ef53510ae2efac73978b7bc69a192188ae439866292ab4b1532501b"
+    },
+    {
+      "path": "analysis_sources/run_2013_symptom_dose_response.py",
+      "bytes": 28279,
+      "sha256": "897ef65b3335272693b65ac3365766cd1a75d72e608eebe38a0d040e23909d6c"
+    },
+    {
+      "path": "analysis_sources/run_2013_twin_family_signal_revision.py",
+      "bytes": 17800,
+      "sha256": "8285901954b671f5569be6ecb34a07e63a0f429799c90e55c32349c7eb419445"
+    },
+    {
+      "path": "analysis_sources/run_2013_twin_relatedness_extension.py",
+      "bytes": 23727,
+      "sha256": "6852a684af8379af782d680e22d9bb7a02b06044ed645f0993b88d4b657397ba"
+    },
+    {
+      "path": "analysis_sources/run_whs_ded_richness_sensitivity.py",
+      "bytes": 9403,
+      "sha256": "3800448ca009971021ffca6717caa97fe7b383736535d531225031a543518d8b"
+    },
+    {
+      "path": "docs/data_contract.md",
+      "bytes": 3810,
+      "sha256": "20a0014fc27a0869af71ad34b8548f6b54f2de13f90278d920d3aefe0541d497"
+    },
+    {
+      "path": "docs/methods_and_limits.md",
+      "bytes": 5402,
+      "sha256": "f16228186179e63f3d512c835e9f4071ba0fce92631e56f31efca82f9b0e92b9"
+    },
+    {
+      "path": "docs/reference_results.md",
+      "bytes": 1457,
+      "sha256": "58f222e1cc5f760c642c2d217af72b5b794c5c3ac691d2b5d346ae127bf606cd"
+    },
+    {
+      "path": "docs/reproduction_matrix.md",
+      "bytes": 3363,
+      "sha256": "55a20010b88e3e1799140d159499ba7b16a033bc8be908548b34d4cea498b19a"
+    },
+    {
+      "path": "environment.yml",
+      "bytes": 135,
+      "sha256": "cfccae6159312a95630c4f677c9ac6c5b83b8531ab4ec4fe854f43b601544801"
+    },
+    {
+      "path": "example_data/asv_counts.csv",
+      "bytes": 191943,
+      "sha256": "52c756afcfc5084858894fcfb4e44e08a7fcf3ac3cc075888365c416656e975c"
+    },
+    {
+      "path": "example_data/cohort.csv",
+      "bytes": 64347,
+      "sha256": "a6db98a22ee20ddd77fdbbe66290c4ef8f2a8c0a1c32f62ae47ec3442802fc61"
+    },
+    {
+      "path": "example_data/input_provenance.json",
+      "bytes": 375,
+      "sha256": "032435e35f5ab0aeee26ca874bda982981587dd9d8287fac6734f7802e289f04"
+    },
+    {
+      "path": "example_data/taxonomy.csv",
+      "bytes": 6909,
+      "sha256": "8d934bf38e0b737a957e7a2428a32226598f14aaec02d6d4c269c9917490d5b9"
+    },
+    {
+      "path": "published_results/genus_method_results.csv",
+      "bytes": 362723,
+      "sha256": "58bdbfe68cf996e7a44c773be8f671c908f489a88a5f5657365b55b0fc9cd755"
+    },
+    {
+      "path": "published_results/grouped_score_display.csv",
+      "bytes": 451,
+      "sha256": "cd856b10b9e16c3ef28d5668880eb7ed2ccb0a3ec6d175c335beb90ed918e3e8"
+    },
+    {
+      "path": "published_results/model_coefficients.csv",
+      "bytes": 37255,
+      "sha256": "752bfa9b12ac8daf482e10e021689292c349e44c238982824fac61a658fc6c5f"
+    },
+    {
+      "path": "published_results/provenance.json",
+      "bytes": 4907,
+      "sha256": "0f4764a3f44e80830142dc9dd54222d837b897206590baad21c7668f04f74b1a"
+    },
+    {
+      "path": "published_results/tables/table1_characteristics.tex",
+      "bytes": 1430,
+      "sha256": "615a93507dc6a03c63b8f055259c2937de6b53af0d4b728b1d67cd1beb5badc3"
+    },
+    {
+      "path": "published_results/tables/table_s1a_alpha_diversity.tex",
+      "bytes": 921,
+      "sha256": "2f639ea721d3b6afe183b6e8f4ee001a192e28f0eed0d966402527a7f5a30693"
+    },
+    {
+      "path": "published_results/tables/table_s1b_severity_whs.tex",
+      "bytes": 1260,
+      "sha256": "7c99b3acbee6757ba05125a8ee67e19639b790519978a294b5304e95d9a0961a"
+    },
+    {
+      "path": "published_results/tables/table_s2_richness_robustness.tex",
+      "bytes": 1240,
+      "sha256": "bfe4a452f5492f7dd98e889f696b6171a6fd856d58999f40a9eae947148d9c9e"
+    },
+    {
+      "path": "published_results/tables/table_s3_ecological_context.tex",
+      "bytes": 643,
+      "sha256": "f4f7e41da2c105f003a8a7d01038edd6807201ac9099742530aafd42b4e4fc84"
+    },
+    {
+      "path": "published_results/tables/table_s4_genus_results.tex",
+      "bytes": 1426,
+      "sha256": "29805056f8e9a5e7e71881c859b3ad107122952af65d67548f3f66cd83d8b8ce"
+    },
+    {
+      "path": "published_results/tables/table_s5_twin.tex",
+      "bytes": 1142,
+      "sha256": "636cd23a96f0549cb432a4c507807a535d8ecebfabf8926335bf1d0835144215"
+    },
+    {
+      "path": "published_results/tables/table_s6_model_coefficients.tex",
+      "bytes": 2481,
+      "sha256": "6b431602a9950be0f65db53b91d7656d2ee2fa3c55cc700ec46dc640b96b06af"
+    },
+    {
+      "path": "r/run_2013_ancombc2_analysis.R",
+      "bytes": 8593,
+      "sha256": "9456d1c961b501beda86128f3ae0861e533794aa17dff96ea154a26c8e5fd7ac"
+    },
+    {
+      "path": "r/run_2013_formal_microbiome_package_sensitivity.R",
+      "bytes": 17340,
+      "sha256": "f94da3c01193e72cb9bf544dbbf67dd1a5c3daa636123067287c9910ed763284"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 133,
+      "sha256": "d53d20dde4f9c50db43ec2fdf2b0d368f79de3689a1ee25c08ec842a857a36fc"
+    },
+    {
+      "path": "scripts/render_published_results.py",
+      "bytes": 2233,
+      "sha256": "4fa0ae7531ae8096197bddb461cb44247fb1fa459506d06e4ca4077a22f6ba06"
+    },
+    {
+      "path": "scripts/run_pipeline.py",
+      "bytes": 271,
+      "sha256": "05cd4e7727f30b6449dde4d9c61ad53650a3b92bcf731f6df87df174c039ce7b"
+    },
+    {
+      "path": "source_manifest.json",
+      "bytes": 93252,
+      "sha256": "3d0713a44571003e839101b4aa9a0ff0898ecd8a2654ffc442ef8ff9747b983d"
+    },
+    {
+      "path": "src/twinsuk_microbiome/__init__.py",
+      "bytes": 293,
+      "sha256": "84104a865ed59a27664f51bcfa6d3cb66cd008c496c1891e159b8467b3226eb4"
+    },
+    {
+      "path": "src/twinsuk_microbiome/cli.py",
+      "bytes": 2921,
+      "sha256": "a880aa10f4fc89ca263d646cd6e7bc684a9841bd959560f07632c3965bc777e5"
+    },
+    {
+      "path": "src/twinsuk_microbiome/runtime.py",
+      "bytes": 2020,
+      "sha256": "509692c6190d9b5bd1bdec9e0b51f0b23b7050cbadaac833f4d003e52b8ec41a"
+    },
+    {
+      "path": "src/twinsuk_microbiome/synthetic.py",
+      "bytes": 3942,
+      "sha256": "43f1a5ec15aa4f08d2bf9e47ba742ec01aaef8ce750698b4399730ad9adc0bc5"
+    },
+    {
+      "path": "src/twinsuk_microbiome/workflow.py",
+      "bytes": 35460,
+      "sha256": "0578002813e09cb32d707d46f61e7034c7d13a23cd191875dacbe826373de972"
+    },
+    {
+      "path": "tests/test_release.py",
+      "bytes": 2742,
+      "sha256": "a9cea989dd49210fb6e08de009b3f85e8800002fda94c9acebf8fd7e22d3fe36"
+    },
+    {
+      "path": "tests/test_workflow.py",
+      "bytes": 8009,
+      "sha256": "165ff862963811cd39afcbbbd0c2e7909d1d5291da78f3a19d75f9ca01bfcc68"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 2442,
+      "sha256": "57e1833605733e101ec88dbc576330e081466016fe849832b05a7d8d08f782f4"
+    }
+  ]
+}

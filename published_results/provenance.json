@@ -1,0 +1,96 @@
+{
+  "manuscript_version": 49,
+  "study_models_refitted": false,
+  "participant_data_read": false,
+  "coefficient_rows": 159,
+  "models": 18,
+  "genus_result_rows": 1278,
+  "files": [
+    {
+      "source": "manuscript/no_external_validation_branch_2026-08-23/supplementary_data_S2_model_coefficients.csv",
+      "source_sha256": "752bfa9b12ac8daf482e10e021689292c349e44c238982824fac61a658fc6c5f",
+      "public": "model_coefficients.csv",
+      "public_sha256": "752bfa9b12ac8daf482e10e021689292c349e44c238982824fac61a658fc6c5f",
+      "data_level": "aggregate"
+    },
+    {
+      "source": "manuscript/no_external_validation_branch_2026-08-23/generated/supplementary_data_s1_genus_results.csv",
+      "source_sha256": "58bdbfe68cf996e7a44c773be8f671c908f489a88a5f5657365b55b0fc9cd755",
+      "public": "genus_method_results.csv",
+      "public_sha256": "58bdbfe68cf996e7a44c773be8f671c908f489a88a5f5657365b55b0fc9cd755",
+      "data_level": "aggregate"
+    },
+    {
+      "source": "manuscript/no_external_validation_branch_2026-08-23/generated/table1_characteristics.tex",
+      "source_sha256": "e385bf99235d023e83f7beeae3bfa6b8dc6af0534be6eab2a89cc38614074c2a",
+      "public": "tables/table1_characteristics.tex",
+      "public_sha256": "615a93507dc6a03c63b8f055259c2937de6b53af0d4b728b1d67cd1beb5badc3",
+      "data_level": "aggregate"
+    },
+    {
+      "source": "manuscript/no_external_validation_branch_2026-08-23/generated/table_s1a_alpha_diversity.tex",
+      "source_sha256": "a2d3b6b3c2d681c06c09384bc677154cdea02b6491b87fc624a5cc16d7d59315",
+      "public": "tables/table_s1a_alpha_diversity.tex",
+      "public_sha256": "2f639ea721d3b6afe183b6e8f4ee001a192e28f0eed0d966402527a7f5a30693",
+      "data_level": "aggregate"
+    },
+    {
+      "source": "manuscript/no_external_validation_branch_2026-08-23/generated/table_s1b_severity_whs.tex",
+      "source_sha256": "2a5dd329173d58b87b5c6b4e7bc32db61ba95367c33af784aa92783a729aace7",
+      "public": "tables/table_s1b_severity_whs.tex",
+      "public_sha256": "7c99b3acbee6757ba05125a8ee67e19639b790519978a294b5304e95d9a0961a",
+      "data_level": "aggregate"
+    },
+    {
+      "source": "manuscript/no_external_validation_branch_2026-08-23/generated/table_s2_richness_robustness.tex",
+      "source_sha256": "d4196de882fcd62eb4ffad12750b753d2171f313bc97d42273303c828300162b",
+      "public": "tables/table_s2_richness_robustness.tex",
+      "public_sha256": "bfe4a452f5492f7dd98e889f696b6171a6fd856d58999f40a9eae947148d9c9e",
+      "data_level": "aggregate"
+    },
+    {
+      "source": "manuscript/no_external_validation_branch_2026-08-23/generated/table_s3_ecological_context.tex",
+      "source_sha256": "6fbfae8d9d9c2b8d12235b9e5a4b648f0b4e13e11b8a04a3da6c4c04493847e5",
+      "public": "tables/table_s3_ecological_context.tex",
+      "public_sha256": "f4f7e41da2c105f003a8a7d01038edd6807201ac9099742530aafd42b4e4fc84",
+      "data_level": "aggregate"
+    },
+    {
+      "source": "manuscript/no_external_validation_branch_2026-08-23/generated/table_s4_genus_results.tex",
+      "source_sha256": "e6b23b53d23b508070128366ceaba723eb14f62cdc71b493eb5d0b780c8474c4",
+      "public": "tables/table_s4_genus_results.tex",
+      "public_sha256": "29805056f8e9a5e7e71881c859b3ad107122952af65d67548f3f66cd83d8b8ce",
+      "data_level": "aggregate"
+    },
+    {
+      "source": "manuscript/no_external_validation_branch_2026-08-23/generated/table_s5_twin.tex",
+      "source_sha256": "541666a3cc4c211b695edf964a3052d3c82283f048f7a6767d6fb70043a6ad62",
+      "public": "tables/table_s5_twin.tex",
+      "public_sha256": "636cd23a96f0549cb432a4c507807a535d8ecebfabf8926335bf1d0835144215",
+      "data_level": "aggregate"
+    },
+    {
+      "source": "manuscript/no_external_validation_branch_2026-08-23/generated/table_s6_model_coefficients.tex",
+      "source_sha256": "39e20baf589ab7b2187d841fe3946d2f891c29cae61acdd7af745e735fd7f23b",
+      "public": "tables/table_s6_model_coefficients.tex",
+      "public_sha256": "6b431602a9950be0f65db53b91d7656d2ee2fa3c55cc700ec46dc640b96b06af",
+      "data_level": "aggregate"
+    },
+    {
+      "sources": [
+        {
+          "source": "outputs/symptom_dose_response_2026_08_24/strict_control_category_models.csv",
+          "source_sha256": "561533e327497bfbcc572c76f0b647f9a17bde7534f7a2289a99bd486bcd5c43"
+        },
+        {
+          "source": "outputs/sparse_tail_pooling_followup_2026_08_24/pooled_tail_models.csv",
+          "source_sha256": "bc5b18fc0dbdd7b975aeec06f67f4622aa8b4bfb955419ce7aff9c8222fcf845"
+        }
+      ],
+      "public": "grouped_score_display.csv",
+      "public_sha256": "cd856b10b9e16c3ef28d5668880eb7ed2ccb0a3ec6d175c335beb90ed918e3e8",
+      "data_level": "aggregate",
+      "operation": "select scores 1,2,3 and pooled 4-6; retain six model-summary columns"
+    }
+  ]
+}

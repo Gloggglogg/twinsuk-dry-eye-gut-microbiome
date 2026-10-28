@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this software when using these analysis implementations."
+title: "TwinsUK dry-eye gut-microbiome analysis code"
+version: "1.0.0"
+date-released: "2026-10-28"
+type: software
+license: MIT
+repository-code: "https://github.com/Gloggglogg/twinsuk-dry-eye-gut-microbiome"
+authors:
+  - family-names: Hynnekleiv
+    given-names: Leif
+keywords:
+  - dry eye
+  - gut microbiome
+  - microbial richness
+  - twins
+  - family-clustered inference
